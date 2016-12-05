@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://kbogas.github.io
+title: Sultry Thoughts
+tagline: Random Scribblings 
+description: Irregular posts about ongoing work, interesting news and everything else
+paginate: 5
