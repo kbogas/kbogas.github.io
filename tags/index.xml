@@ -22,11 +22,11 @@
     </item>
     
     <item>
-      <title>Deep Learning</title>
-      <link>kbogas.github.io/tags/deep-learning/</link>
+      <title>Biomedical</title>
+      <link>kbogas.github.io/tags/biomedical/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/deep-learning/</guid>
+      <guid>kbogas.github.io/tags/biomedical/</guid>
       <description></description>
     </item>
     
@@ -36,6 +36,15 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
       <guid>kbogas.github.io/tags/demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph</title>
+      <link>kbogas.github.io/tags/graph/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
+      
+      <guid>kbogas.github.io/tags/graph/</guid>
       <description></description>
     </item>
     

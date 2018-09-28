@@ -12,6 +12,38 @@
     
     <url>
     
+      <loc>kbogas.github.io/publication/aaic2018/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/publication/bougiatiotis201886/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/publication/eccb2018/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/publication/nentidis2017results/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>kbogas.github.io/talk/example-talk/</loc>
       <lastmod>2017-01-01T00:00:00+02:00</lastmod>
     </url>
@@ -44,7 +76,7 @@
     
     <url>
     
-      <loc>kbogas.github.io/project/deep-learning/</loc>
+      <loc>kbogas.github.io/project/example-external-project/</loc>
       <lastmod>2016-04-27T00:00:00+03:00</lastmod>
     </url>
     
@@ -52,7 +84,7 @@
     
     <url>
     
-      <loc>kbogas.github.io/project/example-external-project/</loc>
+      <loc>kbogas.github.io/project/iasis/</loc>
       <lastmod>2016-04-27T00:00:00+03:00</lastmod>
     </url>
     
@@ -62,6 +94,30 @@
     
       <loc>kbogas.github.io/post/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/publication/nlpmj16/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/publication/clef_bougiatiotisk16/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/publication/setn_bougiatiotisg16/</loc>
+      <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -85,7 +141,7 @@
     <url>
     
       <loc>kbogas.github.io/publication_types/1/</loc>
-      <lastmod>2013-07-01T00:00:00+03:00</lastmod>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -94,7 +150,7 @@
     <url>
     
       <loc>kbogas.github.io/publication_types/2/</loc>
-      <lastmod>2015-09-01T00:00:00+03:00</lastmod>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -111,15 +167,7 @@
     
     <url>
     
-      <loc>kbogas.github.io/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>kbogas.github.io/tags/deep-learning/</loc>
+      <loc>kbogas.github.io/tags/biomedical/</loc>
       <lastmod>2016-04-27T00:00:00+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -128,7 +176,24 @@
     
     <url>
     
+      <loc>kbogas.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>kbogas.github.io/tags/demo/</loc>
+      <lastmod>2016-04-27T00:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/tags/graph/</loc>
       <lastmod>2016-04-27T00:00:00+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -147,7 +212,7 @@
     <url>
     
       <loc>kbogas.github.io/publication_types/</loc>
-      <lastmod>2013-07-01T00:00:00+03:00</lastmod>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

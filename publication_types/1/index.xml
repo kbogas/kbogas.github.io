@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="kbogas.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automatic Detection of Linguistic Indicators As a Means of Early Prediction of Alzheimer’s and of Related Dementias: A Cross Linguistics Analysis</title>
+      <link>kbogas.github.io/publication/aaic2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>kbogas.github.io/publication/aaic2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic integration of disease-specific knowledge</title>
+      <link>kbogas.github.io/publication/eccb2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>kbogas.github.io/publication/eccb2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An exploratory analysis of news trends on twitter</title>
+      <link>kbogas.github.io/publication/nlpmj16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>kbogas.github.io/publication/nlpmj16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Author Profiling using Complementary Second Order Attributes and Stylometric Features</title>
+      <link>kbogas.github.io/publication/clef_bougiatiotisk16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>kbogas.github.io/publication/clef_bougiatiotisk16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Content Representation and Similarity of Movies based on Topic Extraction from Subtitles</title>
+      <link>kbogas.github.io/publication/setn_bougiatiotisg16/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>kbogas.github.io/publication/setn_bougiatiotisg16/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mobile visual clothing search</title>

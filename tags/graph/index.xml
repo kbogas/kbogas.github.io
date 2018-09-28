@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Sultry Thoughts</title>
-    <link>kbogas.github.io/project/</link>
-    <description>Recent content in Projects on Sultry Thoughts</description>
+    <title>Graph on Sultry Thoughts</title>
+    <link>kbogas.github.io/tags/graph/</link>
+    <description>Recent content in Graph on Sultry Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0300</lastBuildDate>
     
-	<atom:link href="kbogas.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="kbogas.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>External Project</title>
-      <link>kbogas.github.io/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
-      
-      <guid>kbogas.github.io/project/example-external-project/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>IASIS</title>
