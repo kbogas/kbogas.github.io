@@ -22,13 +22,13 @@
     </item>
     
     <item>
-      <title>Academic</title>
+      <title>Sultry Thoughts</title>
       <link>kbogas.github.io/home/hero/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0300</pubDate>
       
       <guid>kbogas.github.io/home/hero/</guid>
-      <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release  
-(function defer() { if (window.jQuery) { jQuery(document).ready(function(){ GetLatestReleaseInfo(); }); } else { setTimeout(function() { defer() }, 50); } })(); function GetLatestReleaseInfo() { $.getJSON(&#39;https://api.github.com/repos/gcushen/hugo-academic/tags&#39;).done(function (json) { let release = json[0]; // let downloadURL = release.zipball_url; $(&#39;#academic-release&#39;).text(&#39;Latest release &#39; + release.name); }); }  </description>
+      <description>Just another personal webpage Latest release   --
+(function defer() { if (window.jQuery) { jQuery(document).ready(function(){ GetLatestReleaseInfo(); }); } else { setTimeout(function() { defer() }, 50); } })(); function GetLatestReleaseInfo() { $.getJSON(&#39;https://api.github.com/repos/gcushen/hugo-academic/tags&#39;).done(function (json) { let release = json[0]; // let downloadURL = release.zipball_url; $(&#39;#academic-release&#39;).text(&#39;Latest release &#39; + release.name); }); }  -- </description>
     </item>
     
     <item>
@@ -37,8 +37,8 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
       <guid>kbogas.github.io/home/about/</guid>
-      <description>Biography Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet.</description>
+      <description>Biography Welcome to my personal page!
+I am an Electrical and Computer Systems Engineer and my primary focus is data science and machine learning. I hold a research associate position at the Institute of Informatics and Telecommunications of the National Center for Scientific Research “Demokritos”, where I am involved in international projects. I work along the Software and Knowledge Engineering Laboratory and I conduct research under the guidance of Dr.</description>
     </item>
     
     <item>
@@ -110,9 +110,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristiq
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
       <guid>kbogas.github.io/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-I am a teaching instructor for the following courses at University X:
- CS101: An intro to computer science CS102: An intro to computer science CS103: An intro to computer science CS104: An intro to computer science CS105: An intro to computer science CS106: An intro to computer science CS107: An intro to computer science  </description>
+      <description></description>
     </item>
     
     <item>
