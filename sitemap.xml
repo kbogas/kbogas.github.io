@@ -12,6 +12,14 @@
     
     <url>
     
+      <loc>kbogas.github.io/post/hello_world/</loc>
+      <lastmod>2018-09-28T00:00:00+03:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>kbogas.github.io/publication/aaic2018/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -193,8 +201,35 @@
     
     <url>
     
+      <loc>kbogas.github.io/tags/general/</loc>
+      <lastmod>2018-09-28T00:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>kbogas.github.io/tags/graph/</loc>
       <lastmod>2016-04-27T00:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/tags/ml/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>kbogas.github.io/tags/multimedia/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Hello World!</title>
+      <link>kbogas.github.io/post/hello_world/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0300</pubDate>
+      
+      <guid>kbogas.github.io/post/hello_world/</guid>
+      <description>&lt;p&gt;Just starting out!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Automatic Detection of Linguistic Indicators As a Means of Early Prediction of Alzheimer’s and of Related Dementias: A Cross Linguistics Analysis</title>
       <link>kbogas.github.io/publication/aaic2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
@@ -81,7 +91,9 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
       <guid>kbogas.github.io/project/iasis/</guid>
-      <description>&lt;p&gt;Precision medicine promises to transform the delivery of healthcare to patients. Healthcare is evolving from a reactive “one-size-fits-all” system towards a system of predictive, preventive, and precision care. A personalised medicine approach is expected to lead to better health outcomes, improved treatments, and reduction in toxicity due to variable or adverse drug responses.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://project-iasis.eu/&#34;&gt;Visit Project&amp;rsquo;s Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Precision medicine promises to transform the delivery of healthcare to patients. Healthcare is evolving from a reactive “one-size-fits-all” system towards a system of predictive, preventive, and precision care. A personalised medicine approach is expected to lead to better health outcomes, improved treatments, and reduction in toxicity due to variable or adverse drug responses.&lt;/p&gt;
 
 &lt;p&gt;The goal of Project IASIS is to seize the opportunity provided by a wave of data heading our way and turn this into actionable information that would match the right treatment with the right type of patient. A current challenge is that there are large, heterogeneous sets of data ranging from different sources, which if combined would enable the best decisions to be made, allowing for diagnosis and treatment to be personalised to each individual. IASIS is testing this approach in two disease areas – lung cancer and Alzheimer’s disease – but with the longer-term ambition that this approach will be more widely applicable to other disease areas.&lt;/p&gt;
 </description>

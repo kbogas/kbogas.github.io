@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Hello World!</title>
+      <link>kbogas.github.io/post/hello_world/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0300</pubDate>
+      
+      <guid>kbogas.github.io/post/hello_world/</guid>
+      <description>Just starting out!</description>
+    </item>
+    
+    <item>
       <title>Academic: the website designer for Hugo</title>
       <link>kbogas.github.io/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
