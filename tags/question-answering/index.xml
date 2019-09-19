@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Question Answering on Sultry Thoughts</title>
+    <link>kbogas.github.io/tags/question-answering/</link>
+    <description>Recent content in Question Answering on Sultry Thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 27 Apr 2018 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="kbogas.github.io/tags/question-answering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BioASQ</title>
+      <link>kbogas.github.io/project/bioasq/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
+      
+      <guid>kbogas.github.io/project/bioasq/</guid>
+      <description>Visit BioASQ Challenge Website
+The Challenge The BioASQ challenge comprises the following tasks.
+BioASQ Task a on Large-Scale Online Biomedical Semantic Indexing In this task, the participants are asked to classify new PubMed documents, before PubMed curators annotate (in effect, classify) them manually. The classes come from the MeSH hierarchy. As new manual annotations become available, they are used to evaluate the classification performance of participating systems.
+BioASQ Task b on Biomedical Semantic QA (involves IR, QA, summarization and more) This task uses benchmark datasets containing development and test questions, in English, along with gold standard (reference) answers constructed by a team of biomedical experts.</description>
+    </item>
+    
+  </channel>
+</rss>

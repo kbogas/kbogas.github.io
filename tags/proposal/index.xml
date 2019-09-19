@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proposal on Sultry Thoughts</title>
+    <link>kbogas.github.io/tags/proposal/</link>
+    <description>Recent content in Proposal on Sultry Thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="kbogas.github.io/tags/proposal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DuchenneMap</title>
+      <link>kbogas.github.io/project/duchenemap/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
+      
+      <guid>kbogas.github.io/project/duchenemap/</guid>
+      <description>Visit DucheneMap and join the cause!
+Duchenne Map empowers DMD patients and families to make better healthcare decisions.
+Finding information shouldn’t be hard. Find and structure specialised DMD healthcare in a way that’s best for you. Access disease specific up-to-date information. All in one place.
+Personalised healthcare journey. Create a personal healthcare journey by visualising options. Eliminate misinformation. Share knowledge and educate yourself.
+Verified DMD information. Follow clinical trials and research projects through every stage.</description>
+    </item>
+    
+  </channel>
+</rss>

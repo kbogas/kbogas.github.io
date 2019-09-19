@@ -21,6 +21,34 @@
     </item>
     
     <item>
+      <title>BioASQ</title>
+      <link>kbogas.github.io/project/bioasq/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
+      
+      <guid>kbogas.github.io/project/bioasq/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://bioasq.org/&#34;&gt;Visit BioASQ Challenge Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h2&gt;
+
+&lt;p&gt;The BioASQ challenge comprises the following tasks.&lt;/p&gt;
+
+&lt;h3 id=&#34;bioasq-task-a-on-large-scale-online-biomedical-semantic-indexing&#34;&gt;BioASQ Task a on Large-Scale Online Biomedical Semantic Indexing&lt;/h3&gt;
+
+&lt;p&gt;In this task, the participants are asked to classify new PubMed documents, before PubMed curators annotate (in effect, classify) them manually. The classes come from the MeSH hierarchy. As new manual annotations become available, they are used to evaluate the classification performance of participating systems.&lt;/p&gt;
+
+&lt;h3 id=&#34;bioasq-task-b-on-biomedical-semantic-qa-involves-ir-qa-summarization-and-more&#34;&gt;BioASQ Task b on Biomedical Semantic QA (involves IR, QA, summarization and more)&lt;/h3&gt;
+
+&lt;p&gt;This task uses benchmark datasets containing development and test questions, in English, along with gold standard (reference) answers constructed by a team of biomedical experts. The participants have to respond with relevant concepts, articles, snippets and RDF triples, from designated resources, as well as exact and &amp;lsquo;ideal&amp;rsquo; answers.&lt;/p&gt;
+
+&lt;h3 id=&#34;bioasq-task-mesinesp-on-medical-semantic-indexing-in-spanish&#34;&gt;BioASQ Task MESINESP on Medical Semantic Indexing in Spanish&lt;/h3&gt;
+
+&lt;p&gt;In this task, the participants are asked to classify new IBECS and LILACS documents, before curators annotate them manually. The classes come from the MeSH hierarchy through the DeCS vocabulary. As new manual annotations become available, they are used to evaluate the classification performance of participating systems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Hello World!</title>
       <link>kbogas.github.io/post/hello_world/</link>
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0300</pubDate>
@@ -67,22 +95,29 @@
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>kbogas.github.io/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0200</pubDate>
-      
-      <guid>kbogas.github.io/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://sourcethemes.com/academic/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>kbogas.github.io/project/example-external-project/</link>
+      <title>DuchenneMap</title>
+      <link>kbogas.github.io/project/duchenemap/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/project/example-external-project/</guid>
-      <description></description>
+      <guid>kbogas.github.io/project/duchenemap/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://www.duchennemap.org/&#34;&gt;Visit DucheneMap and join the cause!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Duchenne Map empowers DMD patients and families to make better healthcare decisions.&lt;/p&gt;
+
+&lt;h3 id=&#34;finding-information-shouldn-t-be-hard&#34;&gt;Finding information shouldn’t be hard.&lt;/h3&gt;
+
+&lt;p&gt;Find and structure specialised DMD healthcare in a way that’s best for you. Access disease specific up-to-date information. All in one place.&lt;/p&gt;
+
+&lt;h3 id=&#34;personalised-healthcare-journey&#34;&gt;Personalised healthcare journey.&lt;/h3&gt;
+
+&lt;p&gt;Create a personal healthcare journey by visualising options. Eliminate misinformation. Share knowledge and educate yourself.&lt;/p&gt;
+
+&lt;h3 id=&#34;verified-dmd-information&#34;&gt;Verified DMD information.&lt;/h3&gt;
+
+&lt;p&gt;Follow clinical trials and research projects through every stage. Direct contact with healthcare providers. Know where to find information to make healthcare decisions.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -96,6 +131,18 @@
 &lt;p&gt;Precision medicine promises to transform the delivery of healthcare to patients. Healthcare is evolving from a reactive “one-size-fits-all” system towards a system of predictive, preventive, and precision care. A personalised medicine approach is expected to lead to better health outcomes, improved treatments, and reduction in toxicity due to variable or adverse drug responses.&lt;/p&gt;
 
 &lt;p&gt;The goal of Project IASIS is to seize the opportunity provided by a wave of data heading our way and turn this into actionable information that would match the right treatment with the right type of patient. A current challenge is that there are large, heterogeneous sets of data ranging from different sources, which if combined would enable the best decisions to be made, allowing for diagnosis and treatment to be personalised to each individual. IASIS is testing this approach in two disease areas – lung cancer and Alzheimer’s disease – but with the longer-term ambition that this approach will be more widely applicable to other disease areas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>REVEAL</title>
+      <link>kbogas.github.io/project/reveal/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
+      
+      <guid>kbogas.github.io/project/reveal/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://revealproject.eu/&#34;&gt;Visit Projects Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;REVEAL aims to advance the necessary technologies for making a higher level analysis of social media possible. The project will enable users to reveal hidden ‘modalities’ such as reputation, influence or credibility of information.at this approach will be more widely applicable to other disease areas.&lt;/p&gt;
 </description>
     </item>
     
@@ -312,26 +359,6 @@ git submodule update --init --recursive
       
       <guid>kbogas.github.io/publication/setn_bougiatiotisg16/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>kbogas.github.io/publication/person-re-identification/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0300</pubDate>
-      
-      <guid>kbogas.github.io/publication/person-re-identification/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mobile visual clothing search</title>
-      <link>kbogas.github.io/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0300</pubDate>
-      
-      <guid>kbogas.github.io/publication/clothing-search/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
