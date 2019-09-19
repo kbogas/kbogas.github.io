@@ -2,141 +2,141 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Sultry Thoughts</title>
-    <link>kbogas.github.io/home/</link>
+    <link>https://kbogas.github.io/home/</link>
     <description>Recent content in Homes on Sultry Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0300</lastBuildDate>
     
-	<atom:link href="kbogas.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbogas.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>kbogas.github.io/home/hero_carousel/</link>
+      <link>https://kbogas.github.io/home/hero_carousel/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/hero_carousel/</guid>
+      <guid>https://kbogas.github.io/home/hero_carousel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sultry Thoughts</title>
-      <link>kbogas.github.io/home/hero/</link>
+      <link>https://kbogas.github.io/home/hero/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/hero/</guid>
+      <guid>https://kbogas.github.io/home/hero/</guid>
       <description>Just another personal webpage Latest release   --
 (function defer() { if (window.jQuery) { jQuery(document).ready(function(){ GetLatestReleaseInfo(); }); } else { setTimeout(function() { defer() }, 50); } })(); function GetLatestReleaseInfo() { $.getJSON(&#39;https://api.github.com/repos/gcushen/hugo-academic/tags&#39;).done(function (json) { let release = json[0]; // let downloadURL = release.zipball_url; $(&#39;#academic-release&#39;).text(&#39;Latest release &#39; + release.name); }); }  -- </description>
     </item>
     
     <item>
       <title></title>
-      <link>kbogas.github.io/home/about/</link>
+      <link>https://kbogas.github.io/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/about/</guid>
+      <guid>https://kbogas.github.io/home/about/</guid>
       <description>Biography Welcome to my personal page!
 I am an Electrical and Computer Systems Engineer and my primary focus is data science and machine learning. I hold a research associate position at the Institute of Informatics and Telecommunications of the National Center for Scientific Research “Demokritos”, where I am involved in international projects. I work along the Software and Knowledge Engineering Laboratory and I conduct research under the guidance of Dr.</description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>kbogas.github.io/home/publications_selected/</link>
+      <link>https://kbogas.github.io/home/publications_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/publications_selected/</guid>
+      <guid>https://kbogas.github.io/home/publications_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>kbogas.github.io/home/skills/</link>
+      <link>https://kbogas.github.io/home/skills/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/skills/</guid>
+      <guid>https://kbogas.github.io/home/skills/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>kbogas.github.io/home/publications/</link>
+      <link>https://kbogas.github.io/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/publications/</guid>
+      <guid>https://kbogas.github.io/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selected Talks</title>
-      <link>kbogas.github.io/home/talks_selected/</link>
+      <link>https://kbogas.github.io/home/talks_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/talks_selected/</guid>
+      <guid>https://kbogas.github.io/home/talks_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>kbogas.github.io/home/talks/</link>
+      <link>https://kbogas.github.io/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/talks/</guid>
+      <guid>https://kbogas.github.io/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>kbogas.github.io/home/posts/</link>
+      <link>https://kbogas.github.io/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/posts/</guid>
+      <guid>https://kbogas.github.io/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>kbogas.github.io/home/projects/</link>
+      <link>https://kbogas.github.io/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/projects/</guid>
+      <guid>https://kbogas.github.io/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>kbogas.github.io/home/teaching/</link>
+      <link>https://kbogas.github.io/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/teaching/</guid>
+      <guid>https://kbogas.github.io/home/teaching/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>kbogas.github.io/home/tags/</link>
+      <link>https://kbogas.github.io/home/tags/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/tags/</guid>
+      <guid>https://kbogas.github.io/home/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Search</title>
-      <link>kbogas.github.io/home/search/</link>
+      <link>https://kbogas.github.io/home/search/</link>
       <pubDate>Mon, 23 Jul 2018 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/search/</guid>
+      <guid>https://kbogas.github.io/home/search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>kbogas.github.io/home/contact/</link>
+      <link>https://kbogas.github.io/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/home/contact/</guid>
+      <guid>https://kbogas.github.io/home/contact/</guid>
       <description></description>
     </item>
     

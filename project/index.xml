@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Sultry Thoughts</title>
-    <link>kbogas.github.io/project/</link>
+    <link>https://kbogas.github.io/project/</link>
     <description>Recent content in Projects on Sultry Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Fri, 27 Apr 2018 00:00:00 +0300</lastBuildDate>
     
-	<atom:link href="kbogas.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbogas.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BioASQ</title>
-      <link>kbogas.github.io/project/bioasq/</link>
+      <link>https://kbogas.github.io/project/bioasq/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/project/bioasq/</guid>
+      <guid>https://kbogas.github.io/project/bioasq/</guid>
       <description>Visit BioASQ Challenge Website
 The Challenge The BioASQ challenge comprises the following tasks.
 BioASQ Task a on Large-Scale Online Biomedical Semantic Indexing In this task, the participants are asked to classify new PubMed documents, before PubMed curators annotate (in effect, classify) them manually. The classes come from the MeSH hierarchy. As new manual annotations become available, they are used to evaluate the classification performance of participating systems.
@@ -26,10 +26,10 @@ BioASQ Task b on Biomedical Semantic QA (involves IR, QA, summarization and more
     
     <item>
       <title>DuchenneMap</title>
-      <link>kbogas.github.io/project/duchenemap/</link>
+      <link>https://kbogas.github.io/project/duchenemap/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/project/duchenemap/</guid>
+      <guid>https://kbogas.github.io/project/duchenemap/</guid>
       <description>Visit DucheneMap and join the cause!
 Duchenne Map empowers DMD patients and families to make better healthcare decisions.
 Finding information shouldn’t be hard. Find and structure specialised DMD healthcare in a way that’s best for you. Access disease specific up-to-date information. All in one place.
@@ -39,10 +39,10 @@ Verified DMD information. Follow clinical trials and research projects through e
     
     <item>
       <title>IASIS</title>
-      <link>kbogas.github.io/project/iasis/</link>
+      <link>https://kbogas.github.io/project/iasis/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/project/iasis/</guid>
+      <guid>https://kbogas.github.io/project/iasis/</guid>
       <description>Visit Project&amp;rsquo;s Website
 Precision medicine promises to transform the delivery of healthcare to patients. Healthcare is evolving from a reactive “one-size-fits-all” system towards a system of predictive, preventive, and precision care. A personalised medicine approach is expected to lead to better health outcomes, improved treatments, and reduction in toxicity due to variable or adverse drug responses.
 The goal of Project IASIS is to seize the opportunity provided by a wave of data heading our way and turn this into actionable information that would match the right treatment with the right type of patient.</description>
@@ -50,10 +50,10 @@ The goal of Project IASIS is to seize the opportunity provided by a wave of data
     
     <item>
       <title>REVEAL</title>
-      <link>kbogas.github.io/project/reveal/</link>
+      <link>https://kbogas.github.io/project/reveal/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/project/reveal/</guid>
+      <guid>https://kbogas.github.io/project/reveal/</guid>
       <description>Visit Projects Website
 REVEAL aims to advance the necessary technologies for making a higher level analysis of social media possible. The project will enable users to reveal hidden ‘modalities’ such as reputation, influence or credibility of information.at this approach will be more widely applicable to other disease areas.</description>
     </item>

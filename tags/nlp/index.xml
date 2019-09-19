@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NLP on Sultry Thoughts</title>
-    <link>kbogas.github.io/tags/nlp/</link>
+    <link>https://kbogas.github.io/tags/nlp/</link>
     <description>Recent content in NLP on Sultry Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0300</lastBuildDate>
     
-	<atom:link href="kbogas.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbogas.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>REVEAL</title>
-      <link>kbogas.github.io/project/reveal/</link>
+      <link>https://kbogas.github.io/project/reveal/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/project/reveal/</guid>
+      <guid>https://kbogas.github.io/project/reveal/</guid>
       <description>Visit Projects Website
 REVEAL aims to advance the necessary technologies for making a higher level analysis of social media possible. The project will enable users to reveal hidden ‘modalities’ such as reputation, influence or credibility of information.at this approach will be more widely applicable to other disease areas.</description>
     </item>

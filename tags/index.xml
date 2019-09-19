@@ -2,130 +2,130 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Sultry Thoughts</title>
-    <link>kbogas.github.io/tags/</link>
+    <link>https://kbogas.github.io/tags/</link>
     <description>Recent content in Tags on Sultry Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0300</lastBuildDate>
     
-	<atom:link href="kbogas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbogas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Academic</title>
-      <link>kbogas.github.io/tags/academic/</link>
+      <link>https://kbogas.github.io/tags/academic/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/academic/</guid>
+      <guid>https://kbogas.github.io/tags/academic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Author Profiling</title>
-      <link>kbogas.github.io/tags/author-profiling/</link>
+      <link>https://kbogas.github.io/tags/author-profiling/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/author-profiling/</guid>
+      <guid>https://kbogas.github.io/tags/author-profiling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Biomedical</title>
-      <link>kbogas.github.io/tags/biomedical/</link>
+      <link>https://kbogas.github.io/tags/biomedical/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/biomedical/</guid>
+      <guid>https://kbogas.github.io/tags/biomedical/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DMD</title>
-      <link>kbogas.github.io/tags/dmd/</link>
+      <link>https://kbogas.github.io/tags/dmd/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/dmd/</guid>
+      <guid>https://kbogas.github.io/tags/dmd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>General</title>
-      <link>kbogas.github.io/tags/general/</link>
+      <link>https://kbogas.github.io/tags/general/</link>
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/general/</guid>
+      <guid>https://kbogas.github.io/tags/general/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Graph</title>
-      <link>kbogas.github.io/tags/graph/</link>
+      <link>https://kbogas.github.io/tags/graph/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/graph/</guid>
+      <guid>https://kbogas.github.io/tags/graph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ML</title>
-      <link>kbogas.github.io/tags/ml/</link>
+      <link>https://kbogas.github.io/tags/ml/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>kbogas.github.io/tags/ml/</guid>
+      <guid>https://kbogas.github.io/tags/ml/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multimedia</title>
-      <link>kbogas.github.io/tags/multimedia/</link>
+      <link>https://kbogas.github.io/tags/multimedia/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>kbogas.github.io/tags/multimedia/</guid>
+      <guid>https://kbogas.github.io/tags/multimedia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NLP</title>
-      <link>kbogas.github.io/tags/nlp/</link>
+      <link>https://kbogas.github.io/tags/nlp/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/nlp/</guid>
+      <guid>https://kbogas.github.io/tags/nlp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Proposal</title>
-      <link>kbogas.github.io/tags/proposal/</link>
+      <link>https://kbogas.github.io/tags/proposal/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/proposal/</guid>
+      <guid>https://kbogas.github.io/tags/proposal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Question Answering</title>
-      <link>kbogas.github.io/tags/question-answering/</link>
+      <link>https://kbogas.github.io/tags/question-answering/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/question-answering/</guid>
+      <guid>https://kbogas.github.io/tags/question-answering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Relation Extraction</title>
-      <link>kbogas.github.io/tags/relation-extraction/</link>
+      <link>https://kbogas.github.io/tags/relation-extraction/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/relation-extraction/</guid>
+      <guid>https://kbogas.github.io/tags/relation-extraction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Social Networks</title>
-      <link>kbogas.github.io/tags/social-networks/</link>
+      <link>https://kbogas.github.io/tags/social-networks/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
-      <guid>kbogas.github.io/tags/social-networks/</guid>
+      <guid>https://kbogas.github.io/tags/social-networks/</guid>
       <description></description>
     </item>
     
