@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Sultry Thoughts</title>
-    <link>https://kbogas.github.io/project/</link>
-    <description>Recent content in Projects on Sultry Thoughts</description>
+    <title>Machine Learning on Sultry Thoughts</title>
+    <link>https://kbogas.github.io/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Sultry Thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0300</lastBuildDate>
     
-	<atom:link href="https://kbogas.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kbogas.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,18 +24,6 @@ The goal of Project IASIS is to seize the opportunity provided by a wave of data
     </item>
     
     <item>
-      <title>BioASQ</title>
-      <link>https://kbogas.github.io/project/bioasq/</link>
-      <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
-      
-      <guid>https://kbogas.github.io/project/bioasq/</guid>
-      <description>Visit BioASQ Challenge Website
-The Challenge BioASQ organizes challenges on biomedical semantic indexing and question answering (QA). The challenges include tasks relevant to hierarchical text classification, machine learning, information retrieval, QA from texts and structured data, multi-document summarization and many other areas.
-The BioASQ challenge comprises the following tasks.
-BioASQ Task a on Large-Scale Online Biomedical Semantic Indexing In this task, the participants are asked to classify new PubMed documents, before PubMed curators annotate (in effect, classify) them manually.</description>
-    </item>
-    
-    <item>
       <title>REVEAL</title>
       <link>https://kbogas.github.io/project/reveal/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0300</pubDate>
@@ -43,19 +31,6 @@ BioASQ Task a on Large-Scale Online Biomedical Semantic Indexing In this task, t
       <guid>https://kbogas.github.io/project/reveal/</guid>
       <description>Visit Projects Website
 Social Media Verification REVEAL aims to advance the necessary technologies for making a higher level analysis of social media possible. The project will enable users to reveal hidden ‘modalities’ such as reputation, influence or credibility of information.at this approach will be more widely applicable to other disease areas.</description>
-    </item>
-    
-    <item>
-      <title>DuchenneMap</title>
-      <link>https://kbogas.github.io/project/duchenemap/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
-      
-      <guid>https://kbogas.github.io/project/duchenemap/</guid>
-      <description>Visit DucheneMap and join the cause!
-Duchenne Map empowers DMD patients and families to make better healthcare decisions.
-Finding information shouldn’t be hard. Find and structure specialised DMD healthcare in a way that’s best for you. Access disease specific up-to-date information. All in one place.
-Personalised healthcare journey. Create a personal healthcare journey by visualising options. Eliminate misinformation. Share knowledge and educate yourself.
-Verified DMD information. Follow clinical trials and research projects through every stage.</description>
     </item>
     
     <item>

@@ -22,18 +22,9 @@
     </item>
     
     <item>
-      <title>Author Profiling</title>
-      <link>https://kbogas.github.io/tags/author-profiling/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
-      
-      <guid>https://kbogas.github.io/tags/author-profiling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Biomedical</title>
       <link>https://kbogas.github.io/tags/biomedical/</link>
-      <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0300</pubDate>
       
       <guid>https://kbogas.github.io/tags/biomedical/</guid>
       <description></description>
@@ -60,7 +51,7 @@
     <item>
       <title>Graph</title>
       <link>https://kbogas.github.io/tags/graph/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0300</pubDate>
       
       <guid>https://kbogas.github.io/tags/graph/</guid>
       <description></description>
@@ -76,6 +67,15 @@
     </item>
     
     <item>
+      <title>Machine Learning</title>
+      <link>https://kbogas.github.io/tags/machine-learning/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0300</pubDate>
+      
+      <guid>https://kbogas.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Multimedia</title>
       <link>https://kbogas.github.io/tags/multimedia/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
@@ -87,7 +87,7 @@
     <item>
       <title>NLP</title>
       <link>https://kbogas.github.io/tags/nlp/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0300</pubDate>
       
       <guid>https://kbogas.github.io/tags/nlp/</guid>
       <description></description>
@@ -103,18 +103,9 @@
     </item>
     
     <item>
-      <title>Question Answering</title>
-      <link>https://kbogas.github.io/tags/question-answering/</link>
-      <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
-      
-      <guid>https://kbogas.github.io/tags/question-answering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Relation Extraction</title>
       <link>https://kbogas.github.io/tags/relation-extraction/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0300</pubDate>
       
       <guid>https://kbogas.github.io/tags/relation-extraction/</guid>
       <description></description>
@@ -123,7 +114,7 @@
     <item>
       <title>Social Networks</title>
       <link>https://kbogas.github.io/tags/social-networks/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0300</pubDate>
       
       <guid>https://kbogas.github.io/tags/social-networks/</guid>
       <description></description>
