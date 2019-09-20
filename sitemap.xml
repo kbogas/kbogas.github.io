@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>https://kbogas.github.io/post/coin_change/coin_change/</loc>
+      <lastmod>2019-09-20T00:00:00+03:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://kbogas.github.io/project/iasis/</loc>
       <lastmod>2019-04-27T00:00:00+03:00</lastmod>
     </url>
@@ -38,14 +46,6 @@
     
       <loc>https://kbogas.github.io/project/bioasq/</loc>
       <lastmod>2018-04-27T00:00:00+03:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://kbogas.github.io/post/coin-change-as-integer-programming-problem/</loc>
-      <lastmod>2018-09-28T00:00:00+03:00</lastmod>
     </url>
     
   
@@ -182,7 +182,8 @@
     
     <url>
     
-      <loc>https://kbogas.github.io/categories/</loc>
+      <loc>https://kbogas.github.io/tags/cs/</loc>
+      <lastmod>2019-09-20T00:00:00+03:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -190,8 +191,7 @@
     
     <url>
     
-      <loc>https://kbogas.github.io/tags/computer-science/</loc>
-      <lastmod>2018-09-28T00:00:00+03:00</lastmod>
+      <loc>https://kbogas.github.io/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -209,7 +209,7 @@
     <url>
     
       <loc>https://kbogas.github.io/tags/general/</loc>
-      <lastmod>2018-09-28T00:00:00+03:00</lastmod>
+      <lastmod>2019-09-20T00:00:00+03:00</lastmod>
       <priority>0</priority>
     </url>
     

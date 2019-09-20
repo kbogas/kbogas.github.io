@@ -13,11 +13,11 @@
     
     
     <item>
-      <title>Coin-changing </title>
-      <link>https://kbogas.github.io/post/coin-change-as-integer-programming-problem/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0300</pubDate>
+      <title>Coin Change</title>
+      <link>https://kbogas.github.io/post/coin_change/coin_change/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0300</pubDate>
       
-      <guid>https://kbogas.github.io/post/coin-change-as-integer-programming-problem/</guid>
+      <guid>https://kbogas.github.io/post/coin_change/coin_change/</guid>
       <description>Coin-changing (Knapsack problem) Solved as an integer programming problem So a friend of mine was interviewing for a semi-software focused position which had also a time-restricted technical test.
 One of the questions asked was something along these lines:
 A vending machine has been recently installed in your work floor! Unfortunately, there is a limit in the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.</description>
