@@ -12,10 +12,10 @@
     
     <item>
       <title>Coin Change</title>
-      <link>https://kbogas.github.io/post/coin_change/coin_change/</link>
+      <link>https://kbogas.github.io/post/coin_change/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0300</pubDate>
       
-      <guid>https://kbogas.github.io/post/coin_change/coin_change/</guid>
+      <guid>https://kbogas.github.io/post/coin_change/</guid>
       <description>
 
 &lt;h1 id=&#34;coin-changing-knapsack-problem&#34;&gt;Coin-changing (Knapsack problem)&lt;/h1&gt;
@@ -239,7 +239,7 @@ plt.title(&amp;quot;Comparison of Different Methods&amp;quot;)
 plt.show()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;./output_13_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./output_1.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Well as expected the &lt;em&gt;RE&lt;/em&gt; method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won&amp;rsquo;t focus on this one.&lt;/p&gt;
 
@@ -287,7 +287,7 @@ plt.title(&amp;quot;Comparison of DP and IP Methods&amp;quot;)
 plt.show()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;./output_16_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./output_2.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aha!&lt;/p&gt;
 
