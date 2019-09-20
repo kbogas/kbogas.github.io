@@ -7,21 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 27 Apr 2018 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kbogas.github.io/tags/question-answering/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>BioASQ</title>
-      <link>https://kbogas.github.io/project/bioasq/</link>
-      <pubDate>Fri, 27 Apr 2018 00:00:00 +0300</pubDate>
+      <title>Results of the sixth edition of the BioASQ Challenge</title>
+      <link>https://kbogas.github.io/publication/nentidis2018results/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kbogas.github.io/project/bioasq/</guid>
-      <description>Visit BioASQ Challenge Website
-The Challenge The BioASQ challenge comprises the following tasks.
-BioASQ Task a on Large-Scale Online Biomedical Semantic Indexing In this task, the participants are asked to classify new PubMed documents, before PubMed curators annotate (in effect, classify) them manually. The classes come from the MeSH hierarchy. As new manual annotations become available, they are used to evaluate the classification performance of participating systems.
-BioASQ Task b on Biomedical Semantic QA (involves IR, QA, summarization and more) This task uses benchmark datasets containing development and test questions, in English, along with gold standard (reference) answers constructed by a team of biomedical experts.</description>
+      <guid>https://kbogas.github.io/publication/nentidis2018results/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Results of the fifth edition of the BioASQ Challenge</title>
+      <link>https://kbogas.github.io/publication/nentidis2017results/</link>
+      <pubDate>Fri, 04 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbogas.github.io/publication/nentidis2017results/</guid>
+      <description></description>
     </item>
     
   </channel>

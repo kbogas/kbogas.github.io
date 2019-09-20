@@ -49,15 +49,6 @@
     </item>
     
     <item>
-      <title>ML</title>
-      <link>https://kbogas.github.io/tags/ml/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://kbogas.github.io/tags/ml/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Machine Learning</title>
       <link>https://kbogas.github.io/tags/machine-learning/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0300</pubDate>
@@ -69,7 +60,7 @@
     <item>
       <title>Multimedia</title>
       <link>https://kbogas.github.io/tags/multimedia/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kbogas.github.io/tags/multimedia/</guid>
       <description></description>
@@ -90,6 +81,15 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0300</pubDate>
       
       <guid>https://kbogas.github.io/tags/proposal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Question Answering</title>
+      <link>https://kbogas.github.io/tags/question-answering/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kbogas.github.io/tags/question-answering/</guid>
       <description></description>
     </item>
     
