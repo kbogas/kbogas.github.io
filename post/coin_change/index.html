@@ -372,27 +372,29 @@
 
 <h1 id="coin-changing-knapsack-problem">Coin-changing (Knapsack problem)</h1>
 
-<h3 id="solved-as-an-integer-programming-problem">Solved as an integer programming problem</h3>
-
 <p>So a friend of mine was interviewing for a semi-software focused position which had also a time-restricted technical test.</p>
 
 <p>One of the questions asked was something along these lines:</p>
 
-<pre><code>A vending machine has been recently installed in your work floor!
-Unfortunately, there is a limit in the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.
+<pre><code>A vending machine has been recently installed on your work floor!
+Unfortunately, there is a limit on the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.
 So, your task is the following:
-Write a program that given an initial amount of money (the change to be returned), find the minimum number of bills (of certain denominaions) that add up to it.
+Write a program that given an initial amount of money (the change to be returned), find the minimum number of bills (of certain denominations) that add up to it.
 Our machine can give back only bills of 1,2,5 and 10$!
 </code></pre>
 
-<p>Pretty straightforward question that many CS students have already seen during their Algorithms101 or CS101 classes.</p>
+<p>A pretty straightforward problem that many CS students have already seen during their Algorithms101 or CS101 classes.</p>
 
 <p>It was also  featured in xkcd:
 <img src="https://imgs.xkcd.com/comics/np_complete.png" alt="Xkcd Image" /></p>
 
-<p>This problem is essentialy a variation of a <a href="https://en.wikipedia.org/wiki/Knapsack_problem" target="_blank">Knapsack Problem</a>. This is a more <a href="https://en.wikipedia.org/wiki/Change-making_problem" target="_blank">relevant lemma</a> but there is an unlimited amount of blogs, posts etc on this matter, so I won&rsquo;t delve much on the techincal details.</p>
+<p>This problem is essentially a variation of a <a href="https://en.wikipedia.org/wiki/Knapsack_problem" target="_blank">Knapsack Problem</a>. This is a more <a href="https://en.wikipedia.org/wiki/Change-making_problem" target="_blank">relevant lemma</a> but there is an unlimited amount of blogs, posts etc on this matter and I won&rsquo;t delve much on the technical details.</p>
 
-<p>I was once again intrigued by it trying to come-up with a fast solution. Although, I knew that Dynamic Programming was the way to go with this problem, my skills regarding classical CS and algos are a bit rusty, so it would take me some time to remember the inner-workings of the approach.. (P.S.: I should head over to <a href="https://www.geeksforgeeks.org/dynamic-programming/" target="_blank">GFG</a> to strech out my CS skills)</p>
+<p>As we were discussing it, I was trying to come up with a fast solution. Although I knew that Dynamic Programming was the way to go with this problem, my skills regarding classical CS and algos are a bit rusty, so it would take me some time to remember the inner-workings of the approach..</p>
+
+<p>(Note to self: Head over to <a href="https://www.geeksforgeeks.org/dynamic-programming/" target="_blank">GFG</a> to strech out!)</p>
+
+<h3 id="solved-as-an-integer-programming-problem">Solved as an integer programming problem</h3>
 
 <p>Thus, I opted for an optimization approach. As, we would like to minimize the number of bills given back, the obvious choice would be an <a href="https://en.wikipedia.org/wiki/Integer_programming" target="_blank">Integer Programming</a> approach, as the count of each denomination will be <em>non-negative integers</em>.</p>
 
@@ -411,7 +413,7 @@ Our machine can give back only bills of 1,2,5 and 10$!
 <p>with the restraints:</p>
 
 <ul>
-<li>$x &gt;= 0, \forall x \in X$ (we need a non-negative amount of each denomination)</li>
+<li>$x \geq 0, \forall x \in X$ (we need a non-negative amount of each denomination)</li>
 <li>$Χ\cdot w^Τ = C$ (they must sum up to the needed cash)</li>
 </ul>
 
@@ -419,7 +421,7 @@ Our machine can give back only bills of 1,2,5 and 10$!
 
 <p>We will rely on the <a href="https://cvxopt.org/" target="_blank">cvxopt</a> package.</p>
 
-<p>We will also need the GPLK support for the solver.
+<p>We will also need the GLPK_MI package for the solver, as the ECOS_BB is not working correctly.
 Check out <a href="https://www.cvxpy.org/install/index.html" target="_blank">the docs on how to do so</a></p>
 
 <pre><code class="language-python">def solve_with_ip(denominations, CASH):
@@ -595,15 +597,15 @@ plt.show()
 
 <p>Well as expected the <em>RE</em> method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won&rsquo;t focus on this one.</p>
 
-<p>Regarding the two main-contesters we can see than the <em>DP</em> one seems to be faster and not really affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.</p>
+<p>Regarding the two main-contesters, we can see than the <em>DP</em> one seems to be faster and not affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.</p>
 
-<p>This is somewhat expected as <u>Dynamic Programming works really well when the states table is small</u>. This happens because the states that have to be visited are small in number and it can be easy to navigate through them to find the optimal solution,</p>
+<p>This is somewhat expected as <u>Dynamic Programming works well when the states table is small</u>. This happens because the states that have to be visited are small in number and it can be easy to navigate through them to find the optimal solution.</p>
 
-<p>On the other hand, the <em>IP</em> method seems to take up some time for the initial small values, but then the time needed seems constant regardless the value of the cash. However, this constant plateau is still higher than the time needed for the <em>DP</em> method.</p>
+<p>On the other hand, the <em>IP</em> method seems to take up some time for the initial small values, but then the time needed seems constant regardless of the value cash returned. However, this constant plateau is still worse than the time needed for the <em>DP</em> method.</p>
 
 <p>But what happens, when we change the scale of things?</p>
 
-<p>Let&rsquo;s run another test suite with much larger values and evaluate the results between the <em>DP</em> and <em>IP</em> method.</p>
+<p>Let&rsquo;s run another experiment with much larger values and evaluate the results of the <em>DP</em> and <em>IP</em> methods.</p>
 
 <pre><code class="language-python">import pandas as pd
 from time import time
@@ -645,15 +647,15 @@ plt.show()
 
 <p>As we can see the roles have drastically changed.</p>
 
-<p>This is expected as the overall time needed for <em>DP</em> based approach would be something along along the lines of:</p>
+<p>This is expected as the overall time needed for <em>DP</em> based approach is along the lines of:</p>
 
 <p>Number-of-states $\times$ evaluation-time-per-state</p>
 
 <p>With constant evaluation time per state, as we increase the possible number of states (the value to be returned) we see a linear increase to the time needed.</p>
 
-<p>On the other hand, the <em>IP</em> approach does not suffer from such issues. We see a constant time of less than 0.1 seconds no matter the value of cash needed.</p>
+<p>On the other hand, the <em>IP</em> approach does not suffer from such issues. We see a constant time of $\approx0.04$ seconds regardless of the cash needed.</p>
 
-<p>This is mainly because of the solver <a href="https://www.gnu.org/software/glpk/#TOCdocumentation" target="_blank">GNU Linear Programming Kit- GLPK</a> whic is optimized for large scale linear problems.</p>
+<p>This is to be expected as the only thing that changes in the optimization problem is the constant of the CASH needed for the second contstraint. As such, the performance would be the same regardless of the value returned. Moreover, the solver <a href="https://www.gnu.org/software/glpk/#TOCdocumentation" target="_blank">GNU Linear Programming Kit- GLPK</a> used is very efficient in mixed integer programs.</p>
 
 <h2 id="conclusion">Conclusion</h2>
 
@@ -661,20 +663,20 @@ plt.show()
 
 <p>We visited the problem of Coin-Changing and formulated it as an <em>Integer Programming</em> problem. We evaluated a solver on this problem, alongside some classic recursive and <em>dynamic programming</em> procedures. Finally, we performed the two tests, on different scales of input to benchmark the approaches in a simple way.</p>
 
-<p>The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the <em>IP</em> and <em>DP</em> approaches presented here, but this was more of a proof-of-concept and thought provoking experimenation rather than a complete benchmark.</p>
+<p>The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the <em>IP</em> and <em>DP</em> approaches presented here, but this was more of a proof-of-concept and thought-provoking experimenation rather than a complete benchmark.</p>
 
 <p>I hope to have some more time to check the initial performance bump of the <em>IP</em> method (for values of CASH &lt; 200) that seems rather unnatural to me.</p>
 
-<p>As a tl;dr closing remarks I would state the following:</p>
+<p>As a <em>tl;dr closing remarks</em> I would state the following:</p>
 
 <ul>
-<li>If you&rsquo;d like you could formulate the coin-change problem as an <em>IP</em> problem. This is an approach I have not yet seen, although to me seems very natural.</li>
-<li>Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you&rsquo;ve already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &gt; 10000$, then it is crucial. If not, don&rsquo;t bother with it.</li>
-<li>With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.</li>
+<li>If you&rsquo;d like you could formulate the coin-change problem as an <em>IP</em> problem. This is an approach I have not yet seen.</li>
+<li>Is it worth the effort? Firstly, the effort in terms of lines of code is not so big, as demonstrated. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &gt; 10000$, then it is crucial. If not, don&rsquo;t bother with it.</li>
+<li>With regards to the interview itself, I think it would be interesting to see the reaction of the technical supervisor when presented with this approach. If it were me, I would give a (+) to the candidate for the originality of the idea though.</li>
 <li>Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.</li>
 </ul>
 
-<p>If you have any comments or spot any mistakes/error, feel free to contact me or leave a comment!</p>
+<p>If you have any comments or spot any mistakes/errors, feel free to contact me or leave a comment!</p>
 
     </div>
 

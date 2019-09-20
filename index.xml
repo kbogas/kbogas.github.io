@@ -20,27 +20,29 @@
 
 &lt;h1 id=&#34;coin-changing-knapsack-problem&#34;&gt;Coin-changing (Knapsack problem)&lt;/h1&gt;
 
-&lt;h3 id=&#34;solved-as-an-integer-programming-problem&#34;&gt;Solved as an integer programming problem&lt;/h3&gt;
-
 &lt;p&gt;So a friend of mine was interviewing for a semi-software focused position which had also a time-restricted technical test.&lt;/p&gt;
 
 &lt;p&gt;One of the questions asked was something along these lines:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;A vending machine has been recently installed in your work floor!
-Unfortunately, there is a limit in the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.
+&lt;pre&gt;&lt;code&gt;A vending machine has been recently installed on your work floor!
+Unfortunately, there is a limit on the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.
 So, your task is the following:
-Write a program that given an initial amount of money (the change to be returned), find the minimum number of bills (of certain denominaions) that add up to it.
+Write a program that given an initial amount of money (the change to be returned), find the minimum number of bills (of certain denominations) that add up to it.
 Our machine can give back only bills of 1,2,5 and 10$!
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Pretty straightforward question that many CS students have already seen during their Algorithms101 or CS101 classes.&lt;/p&gt;
+&lt;p&gt;A pretty straightforward problem that many CS students have already seen during their Algorithms101 or CS101 classes.&lt;/p&gt;
 
 &lt;p&gt;It was also  featured in xkcd:
 &lt;img src=&#34;https://imgs.xkcd.com/comics/np_complete.png&#34; alt=&#34;Xkcd Image&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This problem is essentialy a variation of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Knapsack_problem&#34; target=&#34;_blank&#34;&gt;Knapsack Problem&lt;/a&gt;. This is a more &lt;a href=&#34;https://en.wikipedia.org/wiki/Change-making_problem&#34; target=&#34;_blank&#34;&gt;relevant lemma&lt;/a&gt; but there is an unlimited amount of blogs, posts etc on this matter, so I won&amp;rsquo;t delve much on the techincal details.&lt;/p&gt;
+&lt;p&gt;This problem is essentially a variation of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Knapsack_problem&#34; target=&#34;_blank&#34;&gt;Knapsack Problem&lt;/a&gt;. This is a more &lt;a href=&#34;https://en.wikipedia.org/wiki/Change-making_problem&#34; target=&#34;_blank&#34;&gt;relevant lemma&lt;/a&gt; but there is an unlimited amount of blogs, posts etc on this matter and I won&amp;rsquo;t delve much on the technical details.&lt;/p&gt;
 
-&lt;p&gt;I was once again intrigued by it trying to come-up with a fast solution. Although, I knew that Dynamic Programming was the way to go with this problem, my skills regarding classical CS and algos are a bit rusty, so it would take me some time to remember the inner-workings of the approach.. (P.S.: I should head over to &lt;a href=&#34;https://www.geeksforgeeks.org/dynamic-programming/&#34; target=&#34;_blank&#34;&gt;GFG&lt;/a&gt; to strech out my CS skills)&lt;/p&gt;
+&lt;p&gt;As we were discussing it, I was trying to come up with a fast solution. Although I knew that Dynamic Programming was the way to go with this problem, my skills regarding classical CS and algos are a bit rusty, so it would take me some time to remember the inner-workings of the approach..&lt;/p&gt;
+
+&lt;p&gt;(Note to self: Head over to &lt;a href=&#34;https://www.geeksforgeeks.org/dynamic-programming/&#34; target=&#34;_blank&#34;&gt;GFG&lt;/a&gt; to strech out!)&lt;/p&gt;
+
+&lt;h3 id=&#34;solved-as-an-integer-programming-problem&#34;&gt;Solved as an integer programming problem&lt;/h3&gt;
 
 &lt;p&gt;Thus, I opted for an optimization approach. As, we would like to minimize the number of bills given back, the obvious choice would be an &lt;a href=&#34;https://en.wikipedia.org/wiki/Integer_programming&#34; target=&#34;_blank&#34;&gt;Integer Programming&lt;/a&gt; approach, as the count of each denomination will be &lt;em&gt;non-negative integers&lt;/em&gt;.&lt;/p&gt;
 
@@ -59,7 +61,7 @@ Our machine can give back only bills of 1,2,5 and 10$!
 &lt;p&gt;with the restraints:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;$x &amp;gt;= 0, \forall x \in X$ (we need a non-negative amount of each denomination)&lt;/li&gt;
+&lt;li&gt;$x \geq 0, \forall x \in X$ (we need a non-negative amount of each denomination)&lt;/li&gt;
 &lt;li&gt;$Χ\cdot w^Τ = C$ (they must sum up to the needed cash)&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -67,7 +69,7 @@ Our machine can give back only bills of 1,2,5 and 10$!
 
 &lt;p&gt;We will rely on the &lt;a href=&#34;https://cvxopt.org/&#34; target=&#34;_blank&#34;&gt;cvxopt&lt;/a&gt; package.&lt;/p&gt;
 
-&lt;p&gt;We will also need the GPLK support for the solver.
+&lt;p&gt;We will also need the GLPK_MI package for the solver, as the ECOS_BB is not working correctly.
 Check out &lt;a href=&#34;https://www.cvxpy.org/install/index.html&#34; target=&#34;_blank&#34;&gt;the docs on how to do so&lt;/a&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def solve_with_ip(denominations, CASH):
@@ -243,15 +245,15 @@ plt.show()
 
 &lt;p&gt;Well as expected the &lt;em&gt;RE&lt;/em&gt; method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won&amp;rsquo;t focus on this one.&lt;/p&gt;
 
-&lt;p&gt;Regarding the two main-contesters we can see than the &lt;em&gt;DP&lt;/em&gt; one seems to be faster and not really affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.&lt;/p&gt;
+&lt;p&gt;Regarding the two main-contesters, we can see than the &lt;em&gt;DP&lt;/em&gt; one seems to be faster and not affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.&lt;/p&gt;
 
-&lt;p&gt;This is somewhat expected as &lt;u&gt;Dynamic Programming works really well when the states table is small&lt;/u&gt;. This happens because the states that have to be visited are small in number and it can be easy to navigate through them to find the optimal solution,&lt;/p&gt;
+&lt;p&gt;This is somewhat expected as &lt;u&gt;Dynamic Programming works well when the states table is small&lt;/u&gt;. This happens because the states that have to be visited are small in number and it can be easy to navigate through them to find the optimal solution.&lt;/p&gt;
 
-&lt;p&gt;On the other hand, the &lt;em&gt;IP&lt;/em&gt; method seems to take up some time for the initial small values, but then the time needed seems constant regardless the value of the cash. However, this constant plateau is still higher than the time needed for the &lt;em&gt;DP&lt;/em&gt; method.&lt;/p&gt;
+&lt;p&gt;On the other hand, the &lt;em&gt;IP&lt;/em&gt; method seems to take up some time for the initial small values, but then the time needed seems constant regardless of the value cash returned. However, this constant plateau is still worse than the time needed for the &lt;em&gt;DP&lt;/em&gt; method.&lt;/p&gt;
 
 &lt;p&gt;But what happens, when we change the scale of things?&lt;/p&gt;
 
-&lt;p&gt;Let&amp;rsquo;s run another test suite with much larger values and evaluate the results between the &lt;em&gt;DP&lt;/em&gt; and &lt;em&gt;IP&lt;/em&gt; method.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s run another experiment with much larger values and evaluate the results of the &lt;em&gt;DP&lt;/em&gt; and &lt;em&gt;IP&lt;/em&gt; methods.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
 from time import time
@@ -293,15 +295,15 @@ plt.show()
 
 &lt;p&gt;As we can see the roles have drastically changed.&lt;/p&gt;
 
-&lt;p&gt;This is expected as the overall time needed for &lt;em&gt;DP&lt;/em&gt; based approach would be something along along the lines of:&lt;/p&gt;
+&lt;p&gt;This is expected as the overall time needed for &lt;em&gt;DP&lt;/em&gt; based approach is along the lines of:&lt;/p&gt;
 
 &lt;p&gt;Number-of-states $\times$ evaluation-time-per-state&lt;/p&gt;
 
 &lt;p&gt;With constant evaluation time per state, as we increase the possible number of states (the value to be returned) we see a linear increase to the time needed.&lt;/p&gt;
 
-&lt;p&gt;On the other hand, the &lt;em&gt;IP&lt;/em&gt; approach does not suffer from such issues. We see a constant time of less than 0.1 seconds no matter the value of cash needed.&lt;/p&gt;
+&lt;p&gt;On the other hand, the &lt;em&gt;IP&lt;/em&gt; approach does not suffer from such issues. We see a constant time of $\approx0.04$ seconds regardless of the cash needed.&lt;/p&gt;
 
-&lt;p&gt;This is mainly because of the solver &lt;a href=&#34;https://www.gnu.org/software/glpk/#TOCdocumentation&#34; target=&#34;_blank&#34;&gt;GNU Linear Programming Kit- GLPK&lt;/a&gt; whic is optimized for large scale linear problems.&lt;/p&gt;
+&lt;p&gt;This is to be expected as the only thing that changes in the optimization problem is the constant of the CASH needed for the second contstraint. As such, the performance would be the same regardless of the value returned. Moreover, the solver &lt;a href=&#34;https://www.gnu.org/software/glpk/#TOCdocumentation&#34; target=&#34;_blank&#34;&gt;GNU Linear Programming Kit- GLPK&lt;/a&gt; used is very efficient in mixed integer programs.&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -309,20 +311,20 @@ plt.show()
 
 &lt;p&gt;We visited the problem of Coin-Changing and formulated it as an &lt;em&gt;Integer Programming&lt;/em&gt; problem. We evaluated a solver on this problem, alongside some classic recursive and &lt;em&gt;dynamic programming&lt;/em&gt; procedures. Finally, we performed the two tests, on different scales of input to benchmark the approaches in a simple way.&lt;/p&gt;
 
-&lt;p&gt;The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the &lt;em&gt;IP&lt;/em&gt; and &lt;em&gt;DP&lt;/em&gt; approaches presented here, but this was more of a proof-of-concept and thought provoking experimenation rather than a complete benchmark.&lt;/p&gt;
+&lt;p&gt;The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the &lt;em&gt;IP&lt;/em&gt; and &lt;em&gt;DP&lt;/em&gt; approaches presented here, but this was more of a proof-of-concept and thought-provoking experimenation rather than a complete benchmark.&lt;/p&gt;
 
 &lt;p&gt;I hope to have some more time to check the initial performance bump of the &lt;em&gt;IP&lt;/em&gt; method (for values of CASH &amp;lt; 200) that seems rather unnatural to me.&lt;/p&gt;
 
-&lt;p&gt;As a tl;dr closing remarks I would state the following:&lt;/p&gt;
+&lt;p&gt;As a &lt;em&gt;tl;dr closing remarks&lt;/em&gt; I would state the following:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;If you&amp;rsquo;d like you could formulate the coin-change problem as an &lt;em&gt;IP&lt;/em&gt; problem. This is an approach I have not yet seen, although to me seems very natural.&lt;/li&gt;
-&lt;li&gt;Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you&amp;rsquo;ve already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &amp;gt; 10000$, then it is crucial. If not, don&amp;rsquo;t bother with it.&lt;/li&gt;
-&lt;li&gt;With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;d like you could formulate the coin-change problem as an &lt;em&gt;IP&lt;/em&gt; problem. This is an approach I have not yet seen.&lt;/li&gt;
+&lt;li&gt;Is it worth the effort? Firstly, the effort in terms of lines of code is not so big, as demonstrated. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &amp;gt; 10000$, then it is crucial. If not, don&amp;rsquo;t bother with it.&lt;/li&gt;
+&lt;li&gt;With regards to the interview itself, I think it would be interesting to see the reaction of the technical supervisor when presented with this approach. If it were me, I would give a (+) to the candidate for the originality of the idea though.&lt;/li&gt;
 &lt;li&gt;Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If you have any comments or spot any mistakes/error, feel free to contact me or leave a comment!&lt;/p&gt;
+&lt;p&gt;If you have any comments or spot any mistakes/errors, feel free to contact me or leave a comment!&lt;/p&gt;
 </description>
     </item>
     
