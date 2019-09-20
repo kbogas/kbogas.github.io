@@ -41,7 +41,7 @@ body {
   font-size: 1rem;
   line-height: inherit;
   color: inherit;
-  background-color: rgb(40, 42, 54);
+  background-color: hsla(16, 24%, 85%, 1);
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
@@ -115,14 +115,14 @@ h4, h5, h6 {
 
 a,
 h3.article-title a:hover {
-  color: rgb(0, 136, 204);
+  color: #795548;
   text-decoration: none;
   transition: color 0.6s ease;
 }
 
 a:hover,
 a:focus {
-  color: rgb(0, 136, 204);
+  color: #795548;
 }
 
 img,
@@ -395,7 +395,7 @@ a[data-fancybox] img {
 }
 
 .home-section {
-  background-color: rgb(29, 33, 39);
+  background-color: hsla(16, 24%, 85%, 1);
   padding: 110px 0 110px 0;
   animation: intro 0.3s both;
   animation-delay: 0.15s;
@@ -406,7 +406,7 @@ a[data-fancybox] img {
 }
 
 .home-section:nth-of-type(even) {
-  background-color: rgb(29, 33, 39);
+  background-color: hsla(16, 24%, 80%, 1);
 }
 
 @media screen and (max-width: 768px) {
@@ -501,7 +501,7 @@ a[data-fancybox] img {
 .featurette-icon {
   display: block;
   width: 100%;
-  color: rgb(0, 136, 204);
+  color: #795548;
   font-size: 3rem;
   text-align: center;
 }
@@ -718,7 +718,7 @@ article .article-metadata {
 }
 
 .article-metadata a:hover {
-  color: rgb(0, 136, 204);
+  color: #795548;
 }
 
 .middot-divider {
@@ -1083,8 +1083,8 @@ a.label:hover {
  **************************************************/
 
 .btn-primary {
-  border-color: rgb(0, 136, 204) !important;
-  background: rgb(0, 136, 204) !important;
+  border-color: #795548 !important;
+  background: #795548 !important;
 }
 
 .btn-primary:hover,
@@ -1092,7 +1092,7 @@ a.label:hover {
 .btn-primary.active,
 .btn-primary:visited,
 .open > .dropdown-toggle.btn-primary {
-  background: rgb(0, 136, 204) !important;
+  background: #795548 !important;
 }
 
 .btn-light {
@@ -1126,12 +1126,12 @@ a.label:hover {
 
 .btn-toolbar .btn.btn-primary:hover,
 .btn-toolbar .btn.btn-primary:focus {
-  background-color: <no value> !important;
+  background-color: #4b2c20 !important;
 }
 
 .btn-toolbar .btn.btn-primary:active,
 .btn-toolbar .btn.btn-primary.active {
-  background-color: <no value> !important;
+  background-color: #a98274 !important;
 }
 
 /*************************************************
@@ -1145,12 +1145,12 @@ a.label:hover {
 }
 
 .btn-primary.btn-outline {
-  color: rgb(0, 136, 204) !important;
-  border-color: rgb(0, 136, 204) !important;
+  color: #795548 !important;
+  border-color: #795548 !important;
 }
 
 .btn-primary.btn-outline:focus {
-  color: rgb(0, 136, 204) !important;
+  color: #795548 !important;
 }
 
 .btn-primary.btn-outline:active {
@@ -1204,7 +1204,7 @@ a.label:hover {
 }
 
 .navbar-default {
-  background: rgb(33, 37, 41);
+  background: #795548;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
 }
 
@@ -1227,12 +1227,12 @@ nav#navbar-main li {
   white-space: nowrap;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: rgb(0, 136, 204);
+  color: rgba(255,255,255,0.6);
   font-weight: 600;
 }
 
 .navbar-default .navbar-nav>li>a:focus {
-  color: rgb(0, 136, 204);
+  color: rgba(255,255,255,0.6);
   background-color: transparent;
 }
 
@@ -1262,11 +1262,11 @@ nav#navbar-main li {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: rgb(0, 136, 204) !important;
+  background-color: rgba(255,255,255,0.6) !important;
 }
 
 .dropdown-menu {
-  background-color: rgb(33, 37, 41) !important;
+  background-color: #795548 !important;
 }
 
 .dropdown-menu > li > a {
@@ -1275,7 +1275,7 @@ nav#navbar-main li {
   clear: both;
   font-weight: 400;
   line-height: 1.42857143;
-  color: rgb(0, 136, 204);
+  color: rgba(255,255,255,0.6);
   white-space: nowrap;
 }
 
@@ -1283,13 +1283,13 @@ nav#navbar-main li {
 .dropdown-menu>li>a:hover {
   color: rgba(255,255,255,1);
   text-decoration: none;
-  background-color: rgb(33, 37, 41);
+  background-color: #795548;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > a:hover {
-  color: rgb(33, 37, 41);
+  color: #795548;
   text-decoration: none;
   background-color: rgba(255,255,255,1);
   outline: 0;
@@ -1299,20 +1299,20 @@ nav#navbar-main li {
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:visited {
-  color: rgb(0, 136, 204) !important;
-  background-color: rgb(33, 37, 41) !important;
+  color: rgba(255,255,255,0.6) !important;
+  background-color: #795548 !important;
 }
 
 .navbar-default .navbar-brand {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
-  color: rgb(153, 153, 153);
+  color: #fff;
 }
 
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
-  color: rgb(153, 153, 153);
+  color: #fff;
   background-color: transparent;
 }
 
@@ -1377,7 +1377,7 @@ nav#navbar-main li {
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
-    color: rgb(0, 136, 204);
+    color: rgba(255,255,255,0.6);
     white-space: nowrap;
   }
 
@@ -1394,7 +1394,7 @@ nav#navbar-main li {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
     line-height: 20px;
-    color: rgb(0, 136, 204);
+    color: rgba(255,255,255,0.6);
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
@@ -1571,7 +1571,7 @@ body.dark {
 }
 
 .dark ul.share li a {
-  background-color: rgb(0, 136, 204);
+  background-color: #795548;
 }
 
 .dark table table {
@@ -1625,7 +1625,7 @@ body.dark {
 }
 
 .dark .card h4 a {
-  color: rgb(0, 136, 204);
+  color: #795548;
   border-bottom: solid 1px transparent;
 }
 
