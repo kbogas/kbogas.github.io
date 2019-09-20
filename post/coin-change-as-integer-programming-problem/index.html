@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 2.4.0">
+  <meta name="generator" content="Hugo 0.49" />
+  <meta name="author" content="Konstantinos Bougiatiotis">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Coin-changing (Knapsack problem) Solved as an integer programming problem So a friend of mine was interviewing for a semi-software focused position which had also a time-restricted technical test.
+One of the questions asked was something along these lines:
+A vending machine has been recently installed in your work floor! Unfortunately, there is a limit in the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://kbogas.github.io/post/coin-change-as-integer-programming-problem/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="rgb(0, 136, 204)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair&#43;Display:400,700%7cFauna&#43;One">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="https://kbogas.github.io/index.xml" type="application/rss+xml" title="Sultry Thoughts">
+  <link rel="feed" href="https://kbogas.github.io/index.xml" type="application/rss+xml" title="Sultry Thoughts">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://kbogas.github.io/post/coin-change-as-integer-programming-problem/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Sultry Thoughts">
+  <meta property="og:url" content="https://kbogas.github.io/post/coin-change-as-integer-programming-problem/">
+  <meta property="og:title" content=" | Sultry Thoughts">
+  <meta property="og:description" content="Coin-changing (Knapsack problem) Solved as an integer programming problem So a friend of mine was interviewing for a semi-software focused position which had also a time-restricted technical test.
+One of the questions asked was something along these lines:
+A vending machine has been recently installed in your work floor! Unfortunately, there is a limit in the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.">
+  <meta property="og:locale" content="en-us">
+  
+  
+  
+  
+
+  
+
+  
+
+  <title> | Sultry Thoughts</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" class="dark">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Sultry Thoughts</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name"></h1>
+
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Konstantinos Bougiatiotis">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="" itemprop="datePublished">
+    <time datetime="" itemprop="dateModified">
+      Jan 1, 0001
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Konstantinos Bougiatiotis">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="https://kbogas.github.io/post/coin-change-as-integer-programming-problem/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=&amp;url=https%3a%2f%2fkbogas.github.io%2fpost%2fcoin-change-as-integer-programming-problem%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkbogas.github.io%2fpost%2fcoin-change-as-integer-programming-problem%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkbogas.github.io%2fpost%2fcoin-change-as-integer-programming-problem%2f&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkbogas.github.io%2fpost%2fcoin-change-as-integer-programming-problem%2f&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=&amp;body=https%3a%2f%2fkbogas.github.io%2fpost%2fcoin-change-as-integer-programming-problem%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h1 id="coin-changing-knapsack-problem">Coin-changing (Knapsack problem)</h1>
+
+<h3 id="solved-as-an-integer-programming-problem">Solved as an integer programming problem</h3>
+
+<p>So a friend of mine was interviewing for a semi-software focused position which had also a time-restricted technical test.</p>
+
+<p>One of the questions asked was something along these lines:</p>
+
+<pre><code>A vending machine has been recently installed in your work floor!
+Unfortunately, there is a limit in the number of bills it can hold, so the technicians would like a way to give out the minimum amount of change in bills needed.
+So, your task is the following:
+Write a program that given an initial amount of money (the change to be returned), find the minimum number of bills (of certain denominaions) that add up to it.
+Our machine can give back only bills of 1,2,5 and 10$!
+</code></pre>
+
+<p>Pretty straightforward question that many CS students have already seen during their Algorithms101 or CS101 classes.</p>
+
+<p>It was also  featured in xkcd:
+<img src="https://imgs.xkcd.com/comics/np_complete.png" alt="Xkcd Image" /></p>
+
+<p>This problem is essentialy a variation of a <a href="https://en.wikipedia.org/wiki/Knapsack_problem" target="_blank">Knapsack Problem</a>. This is a more <a href="https://en.wikipedia.org/wiki/Change-making_problem" target="_blank">relevant lemma</a> but there is an unlimited amount of blogs, posts etc on this matter, so I won&rsquo;t delve much on the techincal details.</p>
+
+<p>I was once again intrigued by it trying to come-up with a fast solution. Although, I knew that Dynamic Programming was the way to go with this problem, my skills regarding classical CS and algos are a bit rusty, so it would take me some time to remember the inner-workings of the approach.. (P.S.: I should head over to <a href="https://www.geeksforgeeks.org/dynamic-programming/" target="_blank">GFG</a> to strech out my CS skills)</p>
+
+<p>Thus, I opted for an optimization approach. As, we would like to minimize the number of bills given back, the obvious choice would be an <a href="https://en.wikipedia.org/wiki/Integer_programming" target="_blank">Integer Programming</a> approach, as the count of each denomination will be <em>non-negative integers</em>.</p>
+
+<p>Let:
+- $w \in \mathbb{Z}^N$, be the array with the $N$ available denominations
+- $X \in \mathbb{Z}^N$, be the count of each denomination returned
+- $C \in \mathbb{Z}$, be the wanted amount of cash to be returned</p>
+
+<p>The problem formulation would be :
+$$ min\sum{X}$$
+with the restraints:
+- $ x &gt;= 0, \forall x \in X$ (we need a non-negative amount of each denomination)
+- $ Χ\cdot w^Τ = C$ (they must sum up to the needed cash)</p>
+
+<p>That&rsquo;s it. We have formulated the problems and the constraints and we just need the appropriate solver to run the procedure. For my approach python 3 is used.</p>
+
+<p>We will rely on the <a href="https://cvxopt.org/" target="_blank">cvxopt</a> package.</p>
+
+<p>We will also need the GPLK support for the solver.
+Check out <a href="https://www.cvxpy.org/install/index.html" target="_blank">the docs on how to do so</a></p>
+
+<pre><code class="language-python">def solve_with_ip(denominations, CASH):
+    &quot;&quot;&quot;
+    Input:
+     - denominations: iterable,
+       a list/array/iterable with the available integer denominations
+     - CASH: int,
+       the needed amount of cash
+    Output:
+        - if the minimization is feasible, a dictionary is returned with
+          keys each denomination and values their corresponding count
+    &quot;&quot;&quot;
+    import cvxpy as cp
+    # The available coin denominations e.g. a 2-dollar bill, a 5-dollar bill and a 10-dollar bill.
+    w = cp.Constant(denominations)
+
+    # The initial cash to be changed
+    CASH = cp.Constant(CASH)
+
+    # Variables containing the number of the coins to be returned for each denominator
+    # The size of this must be equal to the denominatios w
+    x = cp.Variable((1, w.shape[0]), integer=True)
+
+    # We want to minimize the total number of coins returned
+    objective = cp.Minimize(cp.sum(x))
+
+
+
+    # The constraints
+    constraints = [
+        w@x.T == CASH, #
+        x&gt;=0 # semi-positive coins
+    ]
+    # Form and solve problem.
+    prob = cp.Problem(objective, constraints)
+    # Need the GLPK_MI solver because the ECOS_BB is not working correctly.
+    prob.solve(solver = 'GLPK_MI') # Returns the optimal value.
+    if prob.status == 'infeasible':
+        print(&quot;Can't change %s with denominations: %s&quot;%(CASH.__str__(), w.__str__()))
+        return -1
+    else:
+        #return
+        print(&quot;Initial cash %s  is changed into %d coins as follows:&quot;%(CASH.__str__(), prob.value))
+        res = dict(zip([w_ for w_ in w.value], x.value.flatten()))
+        print(res)
+        return res
+
+denominations = [1, 2, 5, 10]
+CASH = 100
+_ = solve_with_ip(denominations, CASH)
+
+
+</code></pre>
+
+<h5 id="competition">Competition</h5>
+
+<p>Let&rsquo;s see how it plays out against two simple strategies found on <a href="https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/" target="_blank">GeeksforGeeks</a></p>
+
+<pre><code class="language-python">import sys
+
+def solve_with_greedy(denominations, CASH):
+    &quot;&quot;&quot;
+    Greedy approach
+    !! THIS APPROACH DOES NOT RETURN CORRECT RESULTS
+    !! FOR EXAMPLE IF WE HAVE denominations [2,5,10]
+    !! AND WE ASK FOR CASH = 6 THE RESULT WOULD BE
+    !! ONE 5 BILL AND NOTHING ELSE
+    &quot;&quot;&quot;
+    n = len(denominations)
+    # Initialize Result
+    ans = []
+    # Traverse through all denomination
+    i = n - 1
+    while(i &gt;= 0):
+        # Find denominations
+        while (CASH &gt;= denominations[i]):
+            CASH -= denominations[i]
+            ans.append(denominations[i])
+        i -= 1
+    return ans
+
+def solve_with_re(denominations, CASH):
+    &quot;&quot;&quot;
+    Recursive approach
+    &quot;&quot;&quot;
+    m = len(denominations)
+    # base case
+    if (CASH == 0):
+        return 0
+    # Initialize result
+    res = sys.maxsize
+    # Try every coin that has smaller value than V
+    for i in range(0, m):
+        if (denominations[i] &lt;= CASH):
+            sub_res = solve_with_re(denominations, CASH - denominations[i])
+            # Check for INT_MAX to avoid overflow and see if
+            # result can minimized
+            if (sub_res != sys.maxsize and sub_res + 1 &lt; res):
+                res = sub_res + 1
+    return res
+
+def solve_with_dp(denominations, CASH):
+    &quot;&quot;&quot;
+    DP_approach
+    &quot;&quot;&quot;
+    m = len(denominations)
+    # table[i] will be storing the minimum
+    # number of coins required for i value.
+    # So table[V] will have result
+    table = [0 for i in range(CASH + 1)]
+    # Base case (If given value V is 0)
+    table[0] = 0
+    # Initialize all table values as Infinite
+    for i in range(1, CASH + 1):
+        table[i] = sys.maxsize
+    # Compute minimum coins required
+    # for all values from 1 to V
+    for i in range(1, CASH + 1):
+
+        # Go through all coins smaller than i
+        for j in range(m):
+            if (denominations[j] &lt;= i):
+                sub_res = table[i - denominations[j]]
+                if (sub_res != sys.maxsize and
+                    sub_res + 1 &lt; table[i]):
+                    table[i] = sub_res + 1
+    return table[CASH]
+
+</code></pre>
+
+<pre><code class="language-python">print(solve_with_re(denominations, 15))
+print(solve_with_greedy(denominations, 15))
+print(solve_with_dp(denominations, 15))
+</code></pre>
+
+<p>Ok, so everything is working as it should. Let&rsquo;s run a test-suite and see how this goes</p>
+
+<pre><code class="language-python">import pandas as pd
+from time import time
+import numpy as np
+methods_names = [&quot;IP&quot;, &quot;DP&quot;, &quot;RE&quot;]
+methods = [solve_with_ip, solve_with_dp, solve_with_re]
+test_instances = [1, 10, 51, 101, 501, 1001] #np.random.randint(11, 10000, size=10000)
+denominations = [1, 2, 5, 10]
+logs = []
+for name, method in zip(methods_names, methods):
+    t_s1 = time()
+    for CASH in test_instances:
+        t_s = time()
+        _ = method(denominations, CASH)
+        logs.append({&quot;Method&quot;:name, &quot;Test&quot;:CASH, &quot;Time&quot;:time()-t_s})
+    print(&quot;%s finished all tests in %0.2f seconds!&quot;%(name, time()-t_s1))
+</code></pre>
+
+<pre><code class="language-python">import seaborn as sns;
+import matplotlib.pyplot as plt
+import matplotlib
+%matplotlib inline
+df = pd.DataFrame(logs)
+fig = plt.figure(figsize=(16,5))
+SMALL_SIZE = 18
+matplotlib.rc('font', size=SMALL_SIZE)
+matplotlib.rc('axes', titlesize=SMALL_SIZE)
+
+sns.lineplot(x='Test', y='Time', hue='Method', data=df)
+plt.xlabel(&quot;Cash to be returned&quot;)
+plt.title(&quot;Comparison of Different Methods&quot;)
+plt.show()
+</code></pre>
+
+<p><img src="coin_change_imgs/output_13_0.png" alt="png" /></p>
+
+<p>Well as expected the <em>RE</em> method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won&rsquo;t focus on this one.</p>
+
+<p>Regarding the two main-contesters we can see than the <em>DP</em> one seems to be faster and not really affected by the amount of cash to be returned. We can see a hint of linear dependence to the cash to be returned but this is more of a guess/intuition rather than an insight gained from the graph.</p>
+
+<p>This is somewhat expected as <u>Dynamic Programming works really well when the states table is small</u>. This happens because the states that have to be visited are small in number and it can be easy to navigate through them to find the optimal solution,</p>
+
+<p>On the other hand, the <em>IP</em> method seems to take up some time for the initial small values, but then the time needed seems constant regardless the value of the cash. However, this constant plateau is still higher than the time needed for the <em>DP</em> method.</p>
+
+<p>But what happens, when we change the scale of things?</p>
+
+<p>Let&rsquo;s run another test suite with much larger values and evaluate the results between the <em>DP</em> and <em>IP</em> method.</p>
+
+<pre><code class="language-python">import pandas as pd
+from time import time
+import numpy as np
+methods_names = [&quot;IP&quot;, &quot;DP&quot;]
+methods = [solve_with_ip, solve_with_dp]
+test_instances = np.arange(1000000, step=1000)
+denominations = [1, 2, 5, 10]
+logs = []
+for name, method in zip(methods_names, methods):
+    t_s1 = time()
+    for CASH in test_instances:
+        t_s = time()
+        _ = method(denominations, CASH)
+        logs.append({&quot;Method&quot;:name, &quot;Test&quot;:CASH, &quot;Time&quot;:time()-t_s})
+    print(&quot;%s finished all tests in %0.2f seconds!&quot;%(name, time()-t_s1))
+</code></pre>
+
+<pre><code class="language-python">import seaborn as sns;
+import matplotlib.pyplot as plt
+import matplotlib
+%matplotlib inline
+df = pd.DataFrame(logs)
+fig = plt.figure(figsize=(16,5))
+SMALL_SIZE = 18
+matplotlib.rc('font', size=SMALL_SIZE)
+matplotlib.rc('axes', titlesize=SMALL_SIZE)
+
+sns.lineplot(x='Test', y='Time', hue='Method', data=df)
+plt.xlabel(&quot;Cash to be returned&quot;)
+plt.ylabel(&quot;Time in seconds&quot;)
+plt.title(&quot;Comparison of DP and IP Methods&quot;)
+plt.show()
+</code></pre>
+
+<p><img src="coin_change_imgs/output_16_0.png" alt="png" /></p>
+
+<p>Aha!</p>
+
+<p>As we can see the roles have drastically changed.</p>
+
+<p>This is expected as the overall time needed for <em>DP</em> based approach would be something along along the lines of:</p>
+
+<p>Number-of-states $\times$ evaluation-time-per-state</p>
+
+<p>With constant evaluation time per state, as we increase the possible number of states (the value to be returned) we see a linear increase to the time needed.</p>
+
+<p>On the other hand, the <em>IP</em> approach does not suffer from such issues. We see a constant time of less than 0.1 seconds no matter the value of cash needed.</p>
+
+<p>This is mainly because of the solver <a href="https://www.gnu.org/software/glpk/#TOCdocumentation" target="_blank">GNU Linear Programming Kit- GLPK</a> whic is optimized for large scale linear problems.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>So a few final words regarding this post.</p>
+
+<p>We visited the problem of Coin-Changing and formulated it as an <em>Integer Programming</em> problem. We evaluated a solver on this problem, alongside some classic recursive and <em>dynamic programming</em> procedures. Finally, we performed the two tests, on different scales of input to benchmark the approaches in a simple way.</p>
+
+<p>The analysis done here is by no means perfect. I am sure there are more efficient implementations for both the <em>IP</em> and <em>DP</em> approaches presented here, but this was more of a proof-of-concept and thought provoking experimenation rather than a complete benchmark.</p>
+
+<p>I hope to have some more time to check the initial performance bump of the <em>IP</em> method (for values of CASH &lt; 200) that seems rather unnatural to me.</p>
+
+<p>As a tl;dr closing remarks I would state the following:
+- If you&rsquo;d like you could formulate the coin-change problem as an <em>IP</em> problem. This is an approach I have not yet seen, although to me seems very natural.
+- Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you&rsquo;ve already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &gt; 10000$, then it is crucial. If not, don&rsquo;t bother with it.
+- With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.
+- Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.</p>
+
+<p>If you have any comments or spot any mistakes/error, feel free to contact me or leave a comment!</p>
+
+    </div>
+
+    
+
+
+    
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zaxariaszarakakis " + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+
+    
+    <p class="powered-by">
+      <a href="https://kbogas.github.io/privacy/">Privacy Policy</a>
+    </p>
+    
+
+    <p class="powered-by">
+
+      &copy; 2018 &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fas fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        CommonHTML: { linebreaks: { automatic: true } },
+        tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+        TeX: { noUndefined: { attributes: { mathcolor: 'red', mathbackground: '#FFEEEE', mathsize: '90%' } } },
+        messageStyle: 'none'
+      });
+    </script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//zaxariaszarakakis%20.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    <script src="/js/search.js"></script>
+    
+
+    
+    
+
+  </body>
+</html>
+
