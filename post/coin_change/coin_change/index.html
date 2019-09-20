@@ -396,16 +396,24 @@ Our machine can give back only bills of 1,2,5 and 10$!
 
 <p>Thus, I opted for an optimization approach. As, we would like to minimize the number of bills given back, the obvious choice would be an <a href="https://en.wikipedia.org/wiki/Integer_programming" target="_blank">Integer Programming</a> approach, as the count of each denomination will be <em>non-negative integers</em>.</p>
 
-<p>Let:
-- $w \in \mathbb{Z}^N$, be the array with the $N$ available denominations
-- $X \in \mathbb{Z}^N$, be the count of each denomination returned
-- $C \in \mathbb{Z}$, be the wanted amount of cash to be returned</p>
+<p>Let:</p>
 
-<p>The problem formulation would be :
-$$ min\sum{X}$$
-with the restraints:
-- $x &gt;= 0, \forall x \in X$ (we need a non-negative amount of each denomination)
-- $Χ\cdot w^Τ = C$ (they must sum up to the needed cash)</p>
+<ul>
+<li>$w \in \mathbb{Z}^N$, be the array with the $N$ available denominations</li>
+<li>$X \in \mathbb{Z}^N$, be the count of each denomination returned</li>
+<li>$C \in \mathbb{Z}$, be the wanted amount of cash to be returned</li>
+</ul>
+
+<p>The problem formulation would be :</p>
+
+<p>$$ min\sum{X}$$</p>
+
+<p>with the restraints:</p>
+
+<ul>
+<li>$x &gt;= 0, \forall x \in X$ (we need a non-negative amount of each denomination)</li>
+<li>$Χ\cdot w^Τ = C$ (they must sum up to the needed cash)</li>
+</ul>
 
 <p>That&rsquo;s it. We have formulated the problems and the constraints and we just need the appropriate solver to run the procedure. For my approach python 3 is used.</p>
 
@@ -583,7 +591,7 @@ plt.title(&quot;Comparison of Different Methods&quot;)
 plt.show()
 </code></pre>
 
-<p><img src="output_13_0.png" alt="png" /></p>
+<p><img src="./output_13_0.png" alt="png" /></p>
 
 <p>Well as expected the <em>RE</em> method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won&rsquo;t focus on this one.</p>
 
@@ -631,7 +639,7 @@ plt.title(&quot;Comparison of DP and IP Methods&quot;)
 plt.show()
 </code></pre>
 
-<p><img src="output_16_0.png" alt="png" /></p>
+<p><img src="./output_16_0.png" alt="png" /></p>
 
 <p>Aha!</p>
 
@@ -657,11 +665,14 @@ plt.show()
 
 <p>I hope to have some more time to check the initial performance bump of the <em>IP</em> method (for values of CASH &lt; 200) that seems rather unnatural to me.</p>
 
-<p>As a tl;dr closing remarks I would state the following:
-- If you&rsquo;d like you could formulate the coin-change problem as an <em>IP</em> problem. This is an approach I have not yet seen, although to me seems very natural.
-- Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you&rsquo;ve already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &gt; 10000$, then it is crucial. If not, don&rsquo;t bother with it.
-- With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.
-- Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.</p>
+<p>As a tl;dr closing remarks I would state the following:</p>
+
+<ul>
+<li>If you&rsquo;d like you could formulate the coin-change problem as an <em>IP</em> problem. This is an approach I have not yet seen, although to me seems very natural.</li>
+<li>Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you&rsquo;ve already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &gt; 10000$, then it is crucial. If not, don&rsquo;t bother with it.</li>
+<li>With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.</li>
+<li>Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.</li>
+</ul>
 
 <p>If you have any comments or spot any mistakes/error, feel free to contact me or leave a comment!</p>
 

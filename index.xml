@@ -44,16 +44,24 @@ Our machine can give back only bills of 1,2,5 and 10$!
 
 &lt;p&gt;Thus, I opted for an optimization approach. As, we would like to minimize the number of bills given back, the obvious choice would be an &lt;a href=&#34;https://en.wikipedia.org/wiki/Integer_programming&#34; target=&#34;_blank&#34;&gt;Integer Programming&lt;/a&gt; approach, as the count of each denomination will be &lt;em&gt;non-negative integers&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;Let:
-- $w \in \mathbb{Z}^N$, be the array with the $N$ available denominations
-- $X \in \mathbb{Z}^N$, be the count of each denomination returned
-- $C \in \mathbb{Z}$, be the wanted amount of cash to be returned&lt;/p&gt;
+&lt;p&gt;Let:&lt;/p&gt;
 
-&lt;p&gt;The problem formulation would be :
-$$ min\sum{X}$$
-with the restraints:
-- $x &amp;gt;= 0, \forall x \in X$ (we need a non-negative amount of each denomination)
-- $Χ\cdot w^Τ = C$ (they must sum up to the needed cash)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$w \in \mathbb{Z}^N$, be the array with the $N$ available denominations&lt;/li&gt;
+&lt;li&gt;$X \in \mathbb{Z}^N$, be the count of each denomination returned&lt;/li&gt;
+&lt;li&gt;$C \in \mathbb{Z}$, be the wanted amount of cash to be returned&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The problem formulation would be :&lt;/p&gt;
+
+&lt;p&gt;$$ min\sum{X}$$&lt;/p&gt;
+
+&lt;p&gt;with the restraints:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$x &amp;gt;= 0, \forall x \in X$ (we need a non-negative amount of each denomination)&lt;/li&gt;
+&lt;li&gt;$Χ\cdot w^Τ = C$ (they must sum up to the needed cash)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;That&amp;rsquo;s it. We have formulated the problems and the constraints and we just need the appropriate solver to run the procedure. For my approach python 3 is used.&lt;/p&gt;
 
@@ -231,7 +239,7 @@ plt.title(&amp;quot;Comparison of Different Methods&amp;quot;)
 plt.show()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;output_13_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./output_13_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Well as expected the &lt;em&gt;RE&lt;/em&gt; method is by far the slowest one. In fact it was so slow, I had to interrupt it from running for all test cases. So, we won&amp;rsquo;t focus on this one.&lt;/p&gt;
 
@@ -279,7 +287,7 @@ plt.title(&amp;quot;Comparison of DP and IP Methods&amp;quot;)
 plt.show()
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;output_16_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./output_16_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aha!&lt;/p&gt;
 
@@ -305,11 +313,14 @@ plt.show()
 
 &lt;p&gt;I hope to have some more time to check the initial performance bump of the &lt;em&gt;IP&lt;/em&gt; method (for values of CASH &amp;lt; 200) that seems rather unnatural to me.&lt;/p&gt;
 
-&lt;p&gt;As a tl;dr closing remarks I would state the following:
-- If you&amp;rsquo;d like you could formulate the coin-change problem as an &lt;em&gt;IP&lt;/em&gt; problem. This is an approach I have not yet seen, although to me seems very natural.
-- Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you&amp;rsquo;ve already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &amp;gt; 10000$, then it is crucial. If not, don&amp;rsquo;t bother with it.
-- With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.
-- Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.&lt;/p&gt;
+&lt;p&gt;As a tl;dr closing remarks I would state the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you&amp;rsquo;d like you could formulate the coin-change problem as an &lt;em&gt;IP&lt;/em&gt; problem. This is an approach I have not yet seen, although to me seems very natural.&lt;/li&gt;
+&lt;li&gt;Is it worth the effort? Firstly, the effort in terms of line of code is not so big, as you&amp;rsquo;ve already seen. Secondly, regarding the results, if the coin-change machine in your workplace is expected to give out change in the scale of &amp;gt; 10000$, then it is crucial. If not, don&amp;rsquo;t bother with it.&lt;/li&gt;
+&lt;li&gt;With regards to the interview itself, I think it would be funny to see the reaction of the technical supervisor when confronted with this kind of solution/approach. I would give a (+) to the candidate for the originality of the approach though.&lt;/li&gt;
+&lt;li&gt;Finally, as a note to self, do not forget to brush-up your knowledge on simple CS/Algo problems before heading in a technical interview.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;If you have any comments or spot any mistakes/error, feel free to contact me or leave a comment!&lt;/p&gt;
 </description>
