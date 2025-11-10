@@ -4,4 +4,4 @@ date: Jan 15, 2025
 inline: true
 ---
 
-Welcome to the [new DICE group website](/)🎉!
+Finished working on the [new DICE group website](https://dice.iit.demokritos.gr/)🎉!
