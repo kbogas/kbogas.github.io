@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    Konstantinos Bougiatiotis
+  
+</title>
+<meta name="author" content="Konstantinos Bougiatiotis">
+<meta name="description" content="Hopefully this is updated..">
+
+  <meta name="keywords" content="AI, ML, GNN, Knowledge Graphs, NLP, Biomedical">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+
+
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A4%96&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="http://localhost:4001/">
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
+
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home
+              
+                <span class="sr-only">(current)</span>
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/publications/">Publications
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/projects/">Projects
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        <div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        Konstantinos Bougiatiotis
+      
+    </h1>
+    <p class="desc"></p>
+  </header>
+
+  <article>
+    
+      <div class="profile float-right">
+        
+          
+          
+          
+          
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/profile_bougiatiotis-480.webp 480w,/assets/img/profile_bougiatiotis-800.webp 800w,/assets/img/profile_bougiatiotis-1400.webp 1400w," type="image/webp" sizes="(min-width: 1000px) 291.0px, (min-width: 576px)
+      30vw, 95vw">
+    
+    <img src="/assets/img/profile_bougiatiotis.jpg?fc2af32b1675708ca523c42285dc1465" class="img-fluid z-depth-1
+      rounded" width="100%" height="auto" alt="profile_bougiatiotis.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+        
+      </div>
+    
+
+    <div class="clearfix">
+<p>I am a Ph.D. candidate in Computer Science and my primary focus is data science and machine learning. I hold a research associate position with the Institute of Informatics and Telecommunications of the National Center for Scientific Research “Demokritos”, where I am involved with several international projects.</p>
+
+<p>I am part of the <a href="https://dice.iit.demokritos.gr/" rel="external nofollow noopener noopener noreferrer" target="_blank">Document Intelligence Center of Excellence</a> and I conduct research under the guidance of <a href="https://users.iit.demokritos.gr/~paliourg/" rel="external nofollow noopener noopener noreferrer" target="_blank">Dr. George Paliouras</a>.</p>
+
+</div>
+
+    <!-- News -->
+    
+      <h2>
+        <a href="/news/" style="color: inherit">News</a>
+      </h2>
+      <div class="news">
+  
+    
+    <div class="table-responsive" style="max-height: 60vw">
+      <table class="table table-sm table-borderless">
+        
+        
+        
+          <tr>
+            <th scope="row" style="width: 20%">Sep 29, 2025</th>
+            <td>
+              
+                🚀 DICE at <a href="https://icaif25.org/" rel="external nofollow noopener noopener noreferrer" target="_blank">ICAIF-2025</a>!
+
+We’re excited to share that <strong>two new papers</strong> from the team have been accepted: <em>Positive-Unlabeled Learning for Financial Misstatement Detection under Realistic Constraints</em> and <em>A Multimodal Alignment-Based Anomaly Detection Method for Bankruptcy Prediction</em>.
+
+Looking forward to the discussions in Singapore!
+
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row" style="width: 20%">Sep 01, 2025</th>
+            <td>
+              
+                DICE has a new member🎉! <a href="https://dice.iit.demokritos.gr/members/reskos/" rel="external nofollow noopener noopener noreferrer" target="_blank">Nick Reskos</a> nice to have you onboard!
+
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row" style="width: 20%">Aug 04, 2025</th>
+            <td>
+              
+                🎉 DICE at ECML-PKDD!
+
+<strong>Dimitris Kelesis</strong> will be presenting <strong>two of his works</strong> on GNNs and oversmoothing: <em>Partially trained graph convolutional networks resist oversmoothing</em> and <em>Analyzing the effect of residual connections on oversmoothing in graph neural networks</em>.
+
+Catch him in Porto in September!
+
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row" style="width: 20%">Jun 20, 2025</th>
+            <td>
+              
+                DICE will be presenting in the <a href="https://2025.cbms-conference.org/#" rel="external nofollow noopener noopener noreferrer" target="_blank">38th IEEE International Symposium on Computer-Based Medical Systems (CBMS)</a>, its latest work on <em>Predicting Multi-Class Drug-Drug Interactions Using a Disease-Specific Knowledge Graph</em>💊 as a full oral! Stay tuned for the full paper!
+
+              
+            </td>
+          </tr>
+        
+      </table>
+    </div>
+  
+</div>
+
+    
+
+    <!-- Latest posts
+    
+      <h2>
+        <a href="/blog/" style="color: inherit">latest posts</a>
+      </h2>
+      <div class="news">
+  
+    
+    <div
+      class="table-responsive"
+      
+    >
+      <table class="table table-sm table-borderless">
+        
+        
+        
+      </table>
+    </div>
+  
+</div>
+
+      -->
+
+    <!-- Selected papers -->
+    
+      <h2>
+        <a href="/publications/" style="color: inherit">Selected Publications</a>
+      </h2>
+      <div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+        
+          
+          
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/paper_placeholder-480.webp 480w,/assets/img/publication_preview/paper_placeholder-800.webp 800w,/assets/img/publication_preview/paper_placeholder-1400.webp 1400w," type="image/webp" sizes="200px">
+    
+    <img src="/assets/img/publication_preview/paper_placeholder.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="paper_placeholder.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="bougiatiotis2024primespathsenablingfast" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">From Primes to Paths: Enabling Fast Multi-Relational Graph Analysis</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Konstantinos
+            Bougiatiotis</em>, and Georgios
+            Paliouras
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em></em> 2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">bougiatiotis2024primespathsenablingfast</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{From Primes to Paths: Enabling Fast Multi-Relational Graph Analysis}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Bougiatiotis, Konstantinos and Paliouras, Georgios}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{2411.11149}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">primaryclass</span> <span class="p">=</span> <span class="s">{cs.LG}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2411.11149}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">BioASQ</abbr>
+        
+      
+      
+        
+          
+          
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/paper_placeholder-480.webp 480w,/assets/img/publication_preview/paper_placeholder-800.webp 800w,/assets/img/publication_preview/paper_placeholder-1400.webp 1400w," type="image/webp" sizes="200px">
+    
+    <img src="/assets/img/publication_preview/paper_placeholder.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="paper_placeholder.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="krithara2023bioasq" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">BioASQ-QA: A manually curated corpus for Biomedical Question Answering</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Anastasia
+            Krithara, Anastasios
+            Nentidis, Konstantinos
+            \textbfBougiatiotis, and
+        <span class="more-authors" title="click to view 1 more author" onclick="
+              var element = $(this);
+              element.attr('title', '');
+              var more_authors_text = element.text() == '1 more author' ? 'Georgios Paliouras' : '1 more author';
+              var cursorPosition = 0;
+              var textAdder = setInterval(function(){
+                element.html(more_authors_text.substring(0, cursorPosition + 1));
+                if (++cursorPosition == more_authors_text.length){
+                  clearInterval(textAdder);
+                }
+            }, '10');
+          ">1 more author</span>
+      
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Scientific Data</em>,  2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">krithara2023bioasq</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{BioASQ-QA: A manually curated corpus for Biomedical Question Answering}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Krithara, Anastasia and Nentidis, Anastasios and \textbf{Bougiatiotis}, Konstantinos and Paliouras, Georgios}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Scientific Data}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{10}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{170}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Nature Publishing Group UK London}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+        
+          
+          
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/paper_placeholder-480.webp 480w,/assets/img/publication_preview/paper_placeholder-800.webp 800w,/assets/img/publication_preview/paper_placeholder-1400.webp 1400w," type="image/webp" sizes="200px">
+    
+    <img src="/assets/img/publication_preview/paper_placeholder.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="paper_placeholder.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="bougiatiotis2023identifying" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Identifying going concern issues in auditor opinions: link to bankruptcy events</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Konstantinos
+            \textbfBougiatiotis, Elias
+            Zavitsanos, and Georgios
+            Paliouras
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In 2023 IEEE International Conference on Big Data (BigData)</em>,  2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">bougiatiotis2023identifying</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Identifying going concern issues in auditor opinions: link to bankruptcy events}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{\textbf{Bougiatiotis}, Konstantinos and Zavitsanos, Elias and Paliouras, Georgios}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{2023 IEEE International Conference on Big Data (BigData)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{2805--2813}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{IEEE}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+      
+        
+          
+          
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/paper_placeholder-480.webp 480w,/assets/img/publication_preview/paper_placeholder-800.webp 800w,/assets/img/publication_preview/paper_placeholder-1400.webp 1400w," type="image/webp" sizes="200px">
+    
+    <img src="/assets/img/publication_preview/paper_placeholder.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="paper_placeholder.png" data-zoomable loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="bougiatiotis2023efficient" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Efficient Complex Network Representation Using Prime Numbers</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Konstantinos
+            \textbfBougiatiotis, and Georgios
+            Paliouras
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In International Conference on Complex Networks and Their Applications</em>,  2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">bougiatiotis2023efficient</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Efficient Complex Network Representation Using Prime Numbers}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{\textbf{Bougiatiotis}, Konstantinos and Paliouras, Georgios}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Complex Networks and Their Applications}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{75--86}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">organization</span> <span class="p">=</span> <span class="s">{Springer Nature Switzerland Cham}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+    
+
+    
+
+    <!-- Social -->
+    
+      <div class="social">
+        <div class="contact-icons">
+  
+      <a href="https://github.com/kbogas#%20your%20GitHub%20user%20name" title="GitHub" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
+    
+
+  
+      <a href="https://scholar.google.com/citations?user=FUgj2joAAAA" title="Google Scholar" rel="external nofollow noopener noopener noreferrer" target="_blank"><i class="ai ai-google-scholar"></i></a>
+    
+
+</div>
+
+        <div class="contact-note"></div>
+      </div>
+    
+
+      
+    
+    <!-- This is specifically for the person -->
+    
+
+  </article>
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      © Copyright 2025
+      Konstantinos
+      
+      Bougiatiotis. 
+      
+        <a href="http://localhost:4001/impressum">Impressum</a>.
+      
+      
+        Last updated: November 10, 2025.
+      
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script>
+<script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+<!-- Badges -->
+
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+
+  <!-- MathJax -->
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+  
+    <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+  <!-- Scrolling Progress Bar -->
+  <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
+
+
+
+
+
+
+
+  <!-- Back to Top -->
+  <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
+    addBackToTop();
+  </script>
+
+
+
+  <!-- Search -->
+  <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script>
+  <script src="/assets/js/search-data.js"></script>
+  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
+
+
+
+
+  </body>
+</html>
