@@ -32,6 +32,7 @@ latest_posts:
 
 I am a Ph.D. candidate in Computer Science and my primary focus is data science and machine learning. I hold a research associate position with the Institute of Informatics and Telecommunications of the National Center for Scientific Research “Demokritos”, where I am involved with several international projects.
 
-I am part of the [Document Intelligence Center of Excellence](https://dice.iit.demokritos.gr/) and I conduct research under the guidance of [Dr. George Paliouras](https://users.iit.demokritos.gr/~paliourg/).
+I am part of the [Document Intelligence Center of Excellence](https://dice.iit.demokritos.gr/) and I conduct research with 
+[Dr. George Paliouras](https://users.iit.demokritos.gr/~paliourg/) as my supervisor.
 
 
