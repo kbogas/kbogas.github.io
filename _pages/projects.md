@@ -2,9 +2,9 @@
 layout: page
 permalink: /projects/
 title: Projects
-description: Past and present projects and collaborations.
+description: Research methods, open datasets, demos, and collaborations.
 nav: true
-display_categories: [Projects]
+display_categories: [Research, Datasets, Demos, Projects, Actions]
 horizontal: True
 nav_order: 3
 ---

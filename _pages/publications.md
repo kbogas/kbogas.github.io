@@ -2,8 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: #
-years: [2025, 2024, 2023, 2022, 2021, 2020]
+description: Papers and preprints on graph learning, language models, and applied machine learning.
 nav: true
 nav_order: 2
 

@@ -3,36 +3,33 @@ layout: about
 title: Home
 page-title: Home
 permalink: /
-description: Hopefully this is updated.. #Welcome to the Document Intelligence Center of Excellence at the Institute of Informatics and Telecommunications.
-footer_image: false # to add the ncsr/ipt logo at the end
-
+description: Efficient graph learning and reasoning for biomedical discovery and financial document analysis.
+subtitle: Graph learning · Knowledge graphs · Applied machine learning
+footer_image: false
 profile:
   align: right
   image: profile_bougiatiotis.jpg
-  more_info: 
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: True # includes social icons at the bottom of the page
-
+selected_papers: true
+social: false
+featured_projects: true
 scholar:
   sort_by: year, month
-  order: descending 
-
+  order: descending
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 4 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: false
+  limit: 3
 ---
 
+<p class="research-intro">I develop efficient methods for learning and reasoning over graphs, with applications in biomedical discovery and financial document analysis.</p>
 
-I am a Ph.D. candidate in Computer Science and my primary focus is data science and machine learning. I hold a research associate position with the Institute of Informatics and Telecommunications of the National Center for Scientific Research “Demokritos”, where I am involved with several international projects.
+I am a Ph.D. candidate in Computer Science and a research associate at the Institute of Informatics and Telecommunications, NCSR “Demokritos”. I am part of the [Document Intelligence Centre of Excellence (DICE)](https://dice.iit.demokritos.gr/), working with [Dr. Georgios Paliouras](https://users.iit.demokritos.gr/~paliourg/).
 
-I am part of the [Document Intelligence Center of Excellence](https://dice.iit.demokritos.gr/) and I conduct research with 
-[Dr. George Paliouras](https://users.iit.demokritos.gr/~paliourg/) as my supervisor.
+My research spans multi-relational graph representations, tensor rank estimation, and the use of graph-based tools to support small language models.
 
-
+<nav class="profile-links" aria-label="Contact and research profiles">
+  <a href="mailto:{{ site.email }}">Email</a>
+  <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>
+  <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
+  <a href="{{ '/publications/' | relative_url }}">Publications</a>
+</nav>
