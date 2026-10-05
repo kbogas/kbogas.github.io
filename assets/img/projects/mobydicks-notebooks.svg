@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">MobyDicks — ideas in progress</title><desc id="desc">Notebook pages connect questions about graphs, features and learning with small experiments.</desc>
+<rect width="960" height="560" rx="18" fill="#edf3f4"/>
+<g stroke="#d6e1e4" stroke-width="1"><path d="M40 110H920M40 160H920M40 210H920M40 260H920M40 310H920M40 360H920M40 410H920M40 460H920"/></g>
+<rect x="72" y="62" width="374" height="430" rx="12" fill="#fff" stroke="#a6bdc5" stroke-width="2"/>
+<g font-family="Arial, sans-serif" fill="#183e4a"><text x="110" y="120" font-size="28" font-weight="700">MobyDicks</text><text x="110" y="154" font-size="18" fill="#506d77">Questions worth chasing</text></g>
+<g stroke="#1f7b8c" stroke-width="3"><path d="M143 258L240 220 349 279 262 357 143 258 349 279M240 220L262 357" fill="none"/></g>
+<g fill="#1f7b8c"><circle cx="143" cy="258" r="13"/><circle cx="240" cy="220" r="13"/><circle cx="349" cy="279" r="13"/><circle cx="262" cy="357" r="13"/></g>
+<path d="M110 411H370M110 435H299" stroke="#c4d6dc" stroke-width="7" stroke-linecap="round"/>
+<path d="M461 282H516M504 269L517 282 504 295" fill="none" stroke="#1f7b8c" stroke-width="3"/>
+<g font-family="Arial, sans-serif"><rect x="544" y="108" width="328" height="88" rx="12" fill="#fff" stroke="#a6bdc5"/><text x="570" y="146" font-size="22" font-weight="700" fill="#183e4a">Graphs &amp; features</text><text x="570" y="176" font-size="17" fill="#506d77">Try a different representation</text><rect x="544" y="230" width="328" height="88" rx="12" fill="#fff" stroke="#a6bdc5"/><text x="570" y="268" font-size="22" font-weight="700" fill="#183e4a">Learning experiments</text><text x="570" y="298" font-size="17" fill="#506d77">Test a small hypothesis</text><rect x="544" y="352" width="328" height="88" rx="12" fill="#fff" stroke="#a6bdc5"/><text x="570" y="390" font-size="22" font-weight="700" fill="#183e4a">Notes &amp; open questions</text><text x="570" y="420" font-size="17" fill="#506d77">Keep the useful loose ends</text></g>
+</svg>

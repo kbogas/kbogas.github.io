@@ -48,6 +48,9 @@ layout: default
           {% assign research_projects = site.projects | where: 'category', 'Research' | sort: 'importance' %}
           {% for project in research_projects %}
             <a class="research-card" href="{{ project.url | relative_url }}">
+              {% if project.img %}
+                <img class="research-card-image" src="{{ project.img | relative_url }}" alt="{{ project.img_alt | escape }}" loading="lazy">
+              {% endif %}
               <h3>{{ project.title }}</h3>
               <p>{{ project.description }}</p>
               <span>Explore the research &rarr;</span>

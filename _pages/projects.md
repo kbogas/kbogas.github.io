@@ -2,9 +2,9 @@
 layout: page
 permalink: /projects/
 title: Projects
-description: Research methods, open datasets, demos, and collaborations.
+description: Published research, ongoing experiments, practical tools, and open datasets.
 nav: true
-display_categories: [Research, Datasets, Demos, Projects, Actions]
+display_categories: [Research, Experiments & tools, Datasets, Demos, Projects, Actions]
 horizontal: True
 nav_order: 3
 ---
